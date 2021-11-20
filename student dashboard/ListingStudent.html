@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    /> -->
+    <link href="./dist/main.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bs-soft py-3">
+      <div class="container-fluid hi">
+        <!-- offcanvas menu trigger -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <span
+            class="navbar-toggler-icon"
+            data-bs-target="#offcanvasExample"
+          ></span>
+        </button>
+        <!--  -->
+
+        <div class="justify-self-end" id="navbarSupportedContent">
+          <div class="studentbox pe-5">
+            <img
+              src="./assests/student_pic.svg"
+              class="img-fluid rounded"
+              alt="student pic"
+            />
+
+            <div class="btn-group">
+              <button type="button" class="btn hr-dark-grey">
+                Oluwakemi Adeleke
+              </button>
+              <button
+                type="button"
+                class="btn dropdown-toggle dropdown-toggle-split"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">student 1</a></li>
+                <li><a class="dropdown-item" href="#">student 2</a></li>
+              </ul>
+            </div>
+            <span class="px-3 hr-grey2">Student</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- offcanvas -->
+
+    <div
+      class="offcanvas offcanvas-start sidebar--nav bg-body-text-color px-3"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header py-2 pt-3">
+        <img src="./assests/Logo.svg" class="img-fluid" alt="house logo" />
+      </div>
+      <div class="offcanvas-body">
+        <nav class="nav flex-column">
+          <a
+            class="nav-link sideLink p-0 mb-4 active mt-3"
+            aria-current="page"
+            href="#"
+          >
+            <img
+              src="./assests/Category.svg"
+              alt="category icon"
+              class="img-fluid me-3"
+            />
+            Dashboard
+          </a>
+          <a class="nav-link sideLink p-0 mb-4" href="#">
+            <img
+              src="./assests/Home.svg"
+              alt="Home icon"
+              class="img-fluid me-3"
+            />
+            Listing</a
+          >
+          <a class="nav-link sideLink p-0 mb-4" href="#">
+            <img
+              src="./assests/Message.svg"
+              alt="Message icon"
+              class="img-fluid me-3"
+            />
+            Messages</a
+          >
+          <a class="nav-link sideLink p-0 mb-4" href="#">
+            <img
+              src="./assests/Send.svg"
+              alt="Send icon"
+              class="img-fluid me-3"
+            />
+            Visitation</a
+          >
+          <a class="nav-link sideLink p-0 mb-4" href="#">
+            <img
+              src="./assests/Profile.svg"
+              alt="Profile icon"
+              class="img-fluid me-3"
+            />
+            Profile</a
+          >
+        </nav>
+      </div>
+    </div>
+
+    <main>
+      <!-- inner side bar comm -->
+      <div class="container">
+        <div class="row align-items-end" style="height: 46px">
+          <div class="col-sm-6 col-md-6 col-xl-7 px-0 h-100">
+            <span class="pb-3 border-bottom hr-green border-danger"
+              >All Listings</span
+            >
+          </div>
+          <!--  -->
+          <div
+            class="
+              col-sm-6 col-md-2
+              d-flex
+              justify-content-end
+              pe-2
+              align-items-center
+              h-100
+            "
+          >
+            <span
+              class="
+                bg-green
+                border
+                rounded-3
+                py-1
+                px-3
+                me-0
+                text-white
+                d-flex
+                justify-content-end
+                align-items-center
+                h-100
+              "
+            >
+              <img src="./assests/Vector.svg" alt="vector icon" class="me-2" />
+              Filter</span
+            >
+          </div>
+          <div class="col-sm-12 mt-sm-2 col-md-4 col-xl-3 px-0 h-100">
+            <div class="input-group flex-nowrap ms-0 h-100">
+              <div class="input-group-text bg-transparent">
+                <img
+                  src="./assests/Search.svg"
+                  alt="Search icon"
+                  class="h-80 w-80"
+                />
+              </div>
+
+              <input
+                type="text"
+                class="form-control border-start-0"
+                placeholder="Search for hostel"
+                aria-label="Search for hostel"
+                aria-describedby="addon-wrapping"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <!-- segmented section -->
+      <div class="container mt-3">
+        <div class="row">
+          <section class="col-8">
+            <div class="p-2 row border">
+              <div class="col-4">
+                <img
+                  src="./assests/HostelPicture.png"
+                  class="img-fluid h-100"
+                  alt="Hostel Picture"
+                />
+              </div>
+              <div class="col-8">
+                <div class="row align-items-center py-2">
+                  <div class="col-11 fw-bold">Four Story Building Hostel</div>
+                  <div class="col-1 justify-self-end">
+                    <img src="./assests/Heart.svg" alt="" />
+                  </div>
+                  <div class="col-12 hr-grey2 mb-5">
+                    <img src="./assests/LocationVector.svg" alt="" />
+                    <span class="hr-grey2 fs-6">
+                      Unilag Campus, Lagos State</span
+                    >
+                  </div>
+                  <div class="col-4 hr-grey2 littleText px-0">
+                    <img src="./assests/NewProp.svg" alt="New property" />
+                    <span>New property</span>
+                  </div>
+                  <div class="col-3 hr-grey2 littleText px-0">
+                    <img src="./assests/BedsVector.svg" alt="Beds" />
+                    <span>12 beds</span>
+                  </div>
+                  <div class="col-3 hr-grey2 littleText px-0">
+                    <img src="./assests/bathtub.svg" alt="Bathubs" />
+                    <span>6 Bathubs</span>
+                  </div>
+                  <div class="col-2 fw-bold hr-base fs-5 px-0">$350k</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="col-4">lkdskl</section>
+        </div>
+      </div>
+    </main>
+    <!-- <div class="d-flex">
+      side bar comment
+      <div class="bg-body-text-color navLogo vh-100 pt-4 px-4">
+        <img src="./assests/Logo.svg" class="img-fluid mb-5" alt="house logo" />
+        <nav class="nav flex-column">
+          <a class="nav-link sideLink mb-3 active" aria-current="page" href="#">
+            <img
+              src="./assests/Category.svg"
+              alt="category icon"
+              class="img-fluid me-3"
+            />
+            Dashboard
+          </a>
+          <a class="nav-link sideLink mb-3" href="#">
+            <img
+              src="./assests/Home.svg"
+              alt="Home icon"
+              class="img-fluid me-3"
+            />
+            Listing</a
+          >
+          <a class="nav-link sideLink mb-3" href="#">
+            <img
+              src="./assests/Message.svg"
+              alt="Message icon"
+              class="img-fluid me-3"
+            />
+            Messages</a
+          >
+          <a class="nav-link sideLink mb-3" href="#">
+            <img
+              src="./assests/Send.svg"
+              alt="Send icon"
+              class="img-fluid me-3"
+            />
+            Visitation</a
+          >
+          <a class="nav-link sideLink mb-3" href="#">
+            <img
+              src="./assests/Profile.svg"
+              alt="Profile icon"
+              class="img-fluid me-3"
+            />
+            Profile</a
+          >
+        </nav>
+      </div>
+      <div class="d-flex flex-column w-100">
+         nav comment
+        <div class="p-4 bs-soft d-flex justify-content-end">
+          <div class="studentbox pe-5">
+            <img
+              src="./assests/student_pic.svg"
+              class="img-fluid rounded"
+              alt="student pic"
+            />
+            
+            <div class="btn-group">
+              <button type="button" class="btn hr-dark-grey">
+                Oluwakemi Adeleke
+              </button>
+              <button
+                type="button"
+                class="btn dropdown-toggle dropdown-toggle-split"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">student 1</a></li>
+                <li><a class="dropdown-item" href="#">student 2</a></li>
+              </ul>
+            </div>
+            <span class="px-3 hr-grey2">Student</span>
+          </div>
+        </div>
+         inner side bar comm
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <span class="pb-2 border-bottom hr-green border-danger"
+            >All Listings</span
+          >
+
+          <span class="bg-green border rounded-3 py-1 px-3 text-white">
+            <img src="./assests/Vector.svg" alt="vector icon" class="me-2" />
+            Filter</span
+          >
+          <div class="input-group flex-nowrap">
+            <img
+              src="./assests/Search.svg"
+              alt="Search icon"
+              class="input-group-text"
+            />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search for hostel"
+              aria-label="Search for hostel"
+              aria-describedby="addon-wrapping"
+            />
+          </div>
+        </div>
+      </div>
+     </div>  -->
+
+    <!-- js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

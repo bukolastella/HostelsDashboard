@@ -1,0 +1,126 @@
+.studentbox {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: 1.6rem 1.6rem;
+
+  img {
+    grid-row: 1/-1;
+  }
+}
+.navLogo {
+  width: 15.8rem;
+  height: 100%;
+}
+.sidebar--nav {
+  width: 15.8rem !important;
+}
+main {
+  // margin-left: 15.8rem !important;
+  padding-top: 1.5rem;
+  // padding-left: 3.37rem !important;
+  // padding-right: 7.5rem !important;
+  padding-bottom: 6rem;
+}
+.littleText {
+  font-size: 0.75rem;
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  .offcanvas-backdrop::before {
+    display: none !important;
+  }
+  .sidebar--nav {
+    transform: none !important;
+    visibility: visible !important;
+    top: 0 !important;
+    height: calc(100% - 0px);
+  }
+  .hi {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: end !important;
+  }
+  main {
+    margin-left: 15.8rem !important;
+    padding-top: 1.5rem;
+    padding-left: 3.37rem !important;
+    padding-right: 7.5rem !important;
+    padding-bottom: 6rem;
+  }
+}
+.sideLink {
+  color: rgba(255, 255, 255, 0.6) !important;
+  // &.active {
+  //   color: white !important;
+  // }
+  &:focus {
+    color: white !important;
+  }
+  img {
+    // filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(253deg)
+    //   brightness(114%) contrast(100%);
+    // background-color: white;
+    // mask-image: url(../assests/Category.svg);
+    // mask-size: cover;
+  }
+  img {
+    filter: brightness(0) invert(1);
+  }
+}
+
+//
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/utilities";
+
+$utilities: (
+  "text-color": (
+    property: color,
+    class: hr,
+    values: (
+      base: #f44336,
+      green: #429523,
+      off-white: #fbfbfb,
+      blue: #f3f8ff,
+      header-text-color: #16320c,
+      body-text-color: #0d1e07,
+      light-green: #62a748,
+      dark-grey: #333333,
+      grey1: #808080,
+      grey2: #999999,
+      bg-white: #f8f9fa,
+      stroke: rgba(189, 189, 189, 0.4),
+    ),
+  ),
+  "background": (
+    property: background-color,
+    class: bg,
+    values: (
+      base: #f44336,
+      green: #429523,
+      off-white: #fbfbfb,
+      blue: #f3f8ff,
+      header-text-color: #16320c,
+      body-text-color: #0d1e07,
+      light-green: #62a748,
+      dark-grey: #333333,
+      grey1: #808080,
+      grey2: #999999,
+      bg-white: #f8f9fa,
+      stroke: rgba(189, 189, 189, 0.4),
+    ),
+  ),
+  "box-shadow": (
+    property: box-shadow,
+    class: bs,
+    values: (
+      soft: 0px 4px 8px rgba(128, 128, 128, 0.15),
+      hover: 0px 16px 24px rgba(128, 128, 128, 0.2),
+    ),
+  ),
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
