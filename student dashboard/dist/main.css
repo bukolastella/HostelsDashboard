@@ -72,6 +72,19 @@ main {
   letter-spacing: 0.02em;
 }
 
+.FilterHeader {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  line-height: 1.8rem !important;
+}
+
+.ResetButton {
+  background: #f2f2f2 !important;
+  border: 2px solid #e0e0e0 !important;
+  border-radius: 5px;
+  color: rgba(87, 88, 79, 0.719);
+}
+
 .borderActive {
   border: 1px solid #429523;
   border-radius: 5px;
@@ -86,7 +99,7 @@ main {
   border-bottom: 2px solid #429523;
 }
 
-.content {
+.Content {
   font-size: 0.875rem;
   line-height: 1.5rem;
   letter-spacing: 0.02em;
@@ -96,6 +109,13 @@ main {
   -webkit-box-shadow: -3px 3px 5px rgba(128, 128, 128, 0.2) !important;
           box-shadow: -3px 3px 5px rgba(128, 128, 128, 0.2) !important;
   cursor: pointer !important;
+}
+
+@media (max-width: 327px) {
+  .makeWidth {
+    display: block !important;
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 400px) {
