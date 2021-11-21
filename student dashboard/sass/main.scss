@@ -5,7 +5,6 @@ body {
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-template-rows: 1.6rem 1.6rem;
-
   img {
     grid-row: 1/-1;
   }
@@ -28,6 +27,15 @@ main {
 .BorderColor {
   border: 1px solid #808080 !important;
 }
+.positionCss {
+  top: 20px;
+  right: 20px;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+}
+.greenBorderColor {
+  border: 1px solid #429523 !important;
+}
 .littleText {
   font-size: 0.75rem;
 }
@@ -42,6 +50,19 @@ main {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.02em;
+}
+.HeaderSize {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.02em;
+}
+@media (max-width: 992px) {
+  .MarginBottom {
+    margin-bottom: 100px;
+  }
+  .topGreenBorder {
+    box-shadow: -5px 4px 8px rgba(128, 128, 128, 0.75) !important;
+  }
 }
 @media (min-width: 992px) {
   body {
