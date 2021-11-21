@@ -11,6 +11,11 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     /> -->
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+<!--  -->
     <link href="./dist/main.css" rel="stylesheet" />
     <title>Document</title>
   </head>
@@ -34,7 +39,7 @@
         <!--  -->
 
         <div class="justify-self-end" id="navbarSupportedContent">
-          <div class="studentbox pe-5">
+          <div class="studentbox pe-5 hr-dark-grey">
             <img
               src="./assests/student_pic.svg"
               class="img-fluid rounded"
@@ -129,15 +134,15 @@
       <!-- inner side bar comm -->
       <div class="container">
         <div class="row align-items-end" style="height: 46px">
-          <div class="col-sm-6 col-md-6 col-xl-7 px-0 h-100">
-            <span class="pb-3 border-bottom hr-green border-danger"
+          <div class="col-6 col-md-6 col-xl-7 px-0 h-100 d-flex align-items-end">
+            <span class="pb-2 hr-green fw-bolder borderColor px-2"
               >All Listings</span
             >
           </div>
           <!--  -->
           <div
             class="
-              col-sm-6 col-md-2
+              col-6 col-md-2
               d-flex
               justify-content-end
               pe-2
@@ -145,7 +150,7 @@
               h-100
             "
           >
-            <span
+            <button
               class="
                 bg-green
                 border
@@ -158,15 +163,17 @@
                 justify-content-end
                 align-items-center
                 h-100
+                pe-auto
               "
+              data-bs-toggle="modal" data-bs-target="#exampleModal"
             >
               <img src="./assests/Vector.svg" alt="vector icon" class="me-2" />
-              Filter</span
+              Filter</button
             >
           </div>
-          <div class="col-sm-12 mt-sm-2 col-md-4 col-xl-3 px-0 h-100">
-            <div class="input-group flex-nowrap ms-0 h-100">
-              <div class="input-group-text bg-transparent">
+          <div class="col-sm-12 h-100 col-md-4 col-xl-3 px-0 ">
+            <div class="input-group flex-nowrap ms-0 h-xl-100 mt-2 mt-md-0 h-100 ">
+              <div class="input-group-text bg-transparent border-end-0 BorderColor">
                 <img
                   src="./assests/Search.svg"
                   alt="Search icon"
@@ -176,7 +183,7 @@
 
               <input
                 type="text"
-                class="form-control border-start-0"
+                class="form-control border-start-0 bg-transparent BorderColor"
                 placeholder="Search for hostel"
                 aria-label="Search for hostel"
                 aria-describedby="addon-wrapping"
@@ -187,156 +194,320 @@
       </div>
       <!--  -->
       <!-- segmented section -->
-      <div class="container mt-3">
-        <div class="row">
-          <section class="col-8">
-            <div class="p-2 row border">
-              <div class="col-4">
-                <img
-                  src="./assests/HostelPicture.png"
-                  class="img-fluid h-100"
-                  alt="Hostel Picture"
-                />
-              </div>
-              <div class="col-8">
-                <div class="row align-items-center py-2">
-                  <div class="col-11 fw-bold">Four Story Building Hostel</div>
-                  <div class="col-1 justify-self-end">
-                    <img src="./assests/Heart.svg" alt="" />
-                  </div>
-                  <div class="col-12 hr-grey2 mb-5">
-                    <img src="./assests/LocationVector.svg" alt="" />
-                    <span class="hr-grey2 fs-6">
-                      Unilag Campus, Lagos State</span
+      <div class="container mt-4">
+        <div class="row gx-5">
+          <!-- left hand side section -->
+          <section class="col-xl-8 mt-5 mt-md-0 p-sm-0">
+            <div class="container p-0">
+              <div class="row gx-5 g-xl-0 justify-content-sm-between me-0">
+              <!-- item 1 iiii-->
+              <div class="p-2 mb-lg-3 row borderActive col-sm-6 col-lg-12 mb-2 mb-lg-0 bg-white">
+                <div class="col-sm-12 col-lg-4">
+                  <img
+                    src="./assests/HostelPicture.svg"
+                    class="img-fluid h-100 w-100"
+                    alt="Hostel Picture"
+                  />
+                </div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="row align-items-center py-2">
+                    <div class="col-10 col-sm-10 col-lg-11 fw-bold hr-body-text-color">
+                      Four Story Building Hostel
+                    </div>
+                    <div
+                      class="col-2 col-sm-2 col-lg-1 justify-self-end text-end"
                     >
+                      <img
+                        src="./assests/Heart.svg"
+                        alt="heart"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="col-12 hr-grey2" style="height: 54px">
+                      <img
+                        src="./assests/LocationVector.svg"
+                        alt="loaction"
+                        class="img-fluid"
+                      />
+                      <span class="hr-grey2 fs-6">
+                        Unilag Campus, Lagos State</span
+                      >
+                    </div>
+                    <div
+                      class="
+                        col-3 col-sm-6
+                        mb-sm-3
+                        col-lg-4
+                        hr-grey2
+                        littleText
+                        px-3 px-lg-0
+                        text-start text-sm-start
+                        d-flex
+                        flex-column
+                      "
+                    >
+                      <img
+                        src="./assests/NewProp.svg"
+                        alt="New property"
+                        class="w-25 img-fluid"
+                      />
+                      <span>New property</span>
+                    </div>
+                    <div
+                      class="
+                        col-3 col-sm-6
+                        mb-sm-3
+                        mb-lg-0
+                        col-lg-3
+                        hr-grey2
+                        littleText
+                        px-0 px-sm-3 px-lg-0
+                        text-start text-sm-end
+                        d-flex
+                        flex-column
+                        align-items-sm-end
+                        align-items-lg-start
+                      "
+                    >
+                      <img
+                        src="./assests/BedsVector.svg"
+                        alt="Beds"
+                        class="img-fluid w-25"
+                      />
+                      <span>12 beds</span>
+                    </div>
+                    <div
+                      class="
+                        col-3 col-sm-6 col-lg-3
+                        hr-grey2
+                        littleText
+                        px-0 px-sm-3 px-lg-0
+                        text-start text-sm-start
+                        d-flex
+                        flex-column
+                      "
+                    >
+                      <img
+                        src="./assests/bathtub.svg"
+                        alt="Bathubs"
+                        class="w-25 img-fluid"
+                      />
+                      <span>6 Bathubs</span>
+                    </div>
+                    <div
+                      class="
+                        col-3 col-sm-6 col-lg-2
+                        fw-bold
+                        hr-base
+                        fs-5
+                        px-3 px-lg-0
+                        text-start text-sm-end
+                        d-flex
+                        flex-column
+                      "
+                    >
+                      $350k
+                    </div>
                   </div>
-                  <div class="col-4 hr-grey2 littleText px-0">
-                    <img src="./assests/NewProp.svg" alt="New property" />
-                    <span>New property</span>
+                </div>
+              </div>
+
+              <!-- item 2 -->
+              <div class="p-2 mb-lg-3 row borderActive col-sm-6 col-lg-12 bg-white">
+                <div class="col-sm-12 col-lg-4 imgControl">
+                  <img
+                    src="./assests/HostelPicture.svg"
+                    class="img-fluid h-100 w-100"
+                    alt="Hostel Picture"
+                  />
+                </div>
+                <div class="col-sm-12 col-lg-8">
+                  <div class="row align-items-center py-2">
+                    <div class="col-10 col-sm-10 col-lg-11 fw-bold hr-body-text-color">
+                      Four Story Building Hostel
+                    </div>
+                    <div
+                      class="col-2 col-sm-2 col-lg-1 justify-self-end text-end"
+                    >
+                      <img
+                        src="./assests/Heart.svg"
+                        alt="heart"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="col-12 hr-grey2" style="height: 54px">
+                      <img
+                        src="./assests/LocationVector.svg"
+                        alt="loaction"
+                        class="img-fluid"
+                      />
+                      <span class="hr-grey2 fs-6">
+                        Unilag Campus, Lagos State</span
+                      >
+                    </div>
+                    <div
+                      class="
+                        col-6
+                        mb-3
+                        col-lg-4
+                        hr-grey2
+                        littleText
+                        px-3 px-lg-0
+                        text-start text-sm-start
+                        d-flex
+                        flex-column
+                      "
+                    >
+                      <img
+                        src="./assests/NewProp.svg"
+                        alt="New property"
+                        class="w-25 img-fluid"
+                      />
+                      <span>New property</span>
+                    </div>
+                    <div
+                      class="
+                        col-6
+                        mb-3
+                        col-lg-3
+                        hr-grey2
+                        littleText
+                        px-3 px-lg-0
+                        text-start text-sm-end
+                        d-flex
+                        flex-column
+                        align-items-end
+                      "
+                    >
+                      <img
+                        src="./assests/BedsVector.svg"
+                        alt="Beds"
+                        class="img-fluid w-25"
+                      />
+                      <span>12 beds</span>
+                    </div>
+                    <div
+                      class="
+                        col-6 col-lg-3
+                        hr-grey2
+                        littleText
+                        px-3 px-lg-0
+                        text-start text-sm-start
+                        d-flex
+                        flex-column
+                      "
+                    >
+                      <img
+                        src="./assests/bathtub.svg"
+                        alt="Bathubs"
+                        class="w-25 img-fluid"
+                      />
+                      <span>6 Bathubs</span>
+                    </div>
+                    <div
+                      class="
+                        col-6 col-lg-2
+                        fw-bold
+                        hr-base
+                        fs-5
+                        px-3 px-lg-0
+                        text-end
+                        d-flex
+                        flex-column
+                      "
+                    >
+                      $350k
+                    </div>
                   </div>
-                  <div class="col-3 hr-grey2 littleText px-0">
-                    <img src="./assests/BedsVector.svg" alt="Beds" />
-                    <span>12 beds</span>
-                  </div>
-                  <div class="col-3 hr-grey2 littleText px-0">
-                    <img src="./assests/bathtub.svg" alt="Bathubs" />
-                    <span>6 Bathubs</span>
-                  </div>
-                  <div class="col-2 fw-bold hr-base fs-5 px-0">$350k</div>
                 </div>
               </div>
             </div>
           </section>
-          <section class="col-4">lkdskl</section>
+          <!-- right side section -->
+          <section class="col-xl-4 d-none d-xl-block p-2 border bg-white px-4 rounded-3">
+            <img
+              src="./assests/HostelPicture.svg"
+              alt="HostelPicture"
+              class="img-fluid d-inline-block w-100"
+              style="height: 240px"
+            />
+            <div class="fw-bold mt-3 hr-body-text-color">
+              Four Story Building Hostel
+            </div>
+            <div class="hr-grey2 my-2 d-flex align-items-center">
+              <img
+                src="./assests/LocationVector.svg"
+                alt="Location Icon"
+                class="me-3"
+              />
+              <span class="hr-grey2 fs-6"> Unilag Campus, Lagos State</span>
+            </div>
+            <p class="hr-body-text-color content">
+              it is a long established fact that a reader will be distracted by
+              the readable content of a page by loooking at its layout. The
+              point of using Lorem ipsum is that is has a more-or-less normal
+              distribution
+            </p>
+            <p class="mt-3 hr-body-text-color content">
+              it is a long established fact that a reader will be distracted by
+              the readable content of a page by loooking at its layout. The
+              point of using Lorem ipsum is that is has a more-or-less normal
+              distribution
+            </p>
+            <div class="fw-bold hr-body-text-color mb-3">More Photos</div>
+            <img
+              src="./assests/Room1.svg"
+              alt="Room"
+              class="col-5 me-2 img-fluid rounded"
+            />
+            <img
+              src="./assests/Room2.svg"
+              alt="Room"
+              class="col-5 img-fluid rounded"
+            />
+          </section>
         </div>
       </div>
     </main>
-    <!-- <div class="d-flex">
-      side bar comment
-      <div class="bg-body-text-color navLogo vh-100 pt-4 px-4">
-        <img src="./assests/Logo.svg" class="img-fluid mb-5" alt="house logo" />
-        <nav class="nav flex-column">
-          <a class="nav-link sideLink mb-3 active" aria-current="page" href="#">
-            <img
-              src="./assests/Category.svg"
-              alt="category icon"
-              class="img-fluid me-3"
-            />
-            Dashboard
-          </a>
-          <a class="nav-link sideLink mb-3" href="#">
-            <img
-              src="./assests/Home.svg"
-              alt="Home icon"
-              class="img-fluid me-3"
-            />
-            Listing</a
-          >
-          <a class="nav-link sideLink mb-3" href="#">
-            <img
-              src="./assests/Message.svg"
-              alt="Message icon"
-              class="img-fluid me-3"
-            />
-            Messages</a
-          >
-          <a class="nav-link sideLink mb-3" href="#">
-            <img
-              src="./assests/Send.svg"
-              alt="Send icon"
-              class="img-fluid me-3"
-            />
-            Visitation</a
-          >
-          <a class="nav-link sideLink mb-3" href="#">
-            <img
-              src="./assests/Profile.svg"
-              alt="Profile icon"
-              class="img-fluid me-3"
-            />
-            Profile</a
-          >
-        </nav>
-      </div>
-      <div class="d-flex flex-column w-100">
-         nav comment
-        <div class="p-4 bs-soft d-flex justify-content-end">
-          <div class="studentbox pe-5">
-            <img
-              src="./assests/student_pic.svg"
-              class="img-fluid rounded"
-              alt="student pic"
-            />
-            
-            <div class="btn-group">
-              <button type="button" class="btn hr-dark-grey">
-                Oluwakemi Adeleke
-              </button>
-              <button
-                type="button"
-                class="btn dropdown-toggle dropdown-toggle-split"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <span class="visually-hidden">Toggle Dropdown</span>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">student 1</a></li>
-                <li><a class="dropdown-item" href="#">student 2</a></li>
-              </ul>
-            </div>
-            <span class="px-3 hr-grey2">Student</span>
+  <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body py-4">
+            <label for="" class="fw-bolder fs-5">Date Added</label>
+            <select class="form-select mt-2 mb-4 py-3" aria-label="Default select example">
+              <option selected>Recently Added</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+            </select>
+            <label for="" class="fw-bolder fs-5">Apartment Type</label>
+            <select class="form-select mt-2 mb-4 py-3" aria-label="Default select example">
+              <option selected>Two bedroom flat</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+            </select>
+            <label for="" class="fw-bolder fs-5">Campus/Location</label>
+            <select class="form-select mt-2 mb-4 py-3" aria-label="Default select example">
+              <option selected>Lagos Campus</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+            </select>
+            <label for="" class="fw-bolder fs-5">Price</label>
+            <select class="form-select mt-2 py-3" aria-label="Default select example">
+              <option selected>$300-$350</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+            </select>
           </div>
-        </div>
-         inner side bar comm
-        <div
-          class="container d-flex justify-content-between align-items-center"
-        >
-          <span class="pb-2 border-bottom hr-green border-danger"
-            >All Listings</span
-          >
 
-          <span class="bg-green border rounded-3 py-1 px-3 text-white">
-            <img src="./assests/Vector.svg" alt="vector icon" class="me-2" />
-            Filter</span
-          >
-          <div class="input-group flex-nowrap">
-            <img
-              src="./assests/Search.svg"
-              alt="Search icon"
-              class="input-group-text"
-            />
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Search for hostel"
-              aria-label="Search for hostel"
-              aria-describedby="addon-wrapping"
-            />
+          <div class="modal-footer d-flex justify-content-between border-top-0 pb-4">
+            <button type="button" class="btn btn-light btn-outline-secondary hr-body-text-color border-0 px-3" data-bs-dismiss="modal">Reset</button>
+            <button type="button" class="btn btn-primary bg-green border-0 px-5">Filter</button>
           </div>
         </div>
       </div>
-     </div>  -->
+  </div>
+  <!--  -->
 
     <!-- js -->
     <script

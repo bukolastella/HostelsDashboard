@@ -1,3 +1,6 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
 .studentbox {
   display: grid;
   grid-template-columns: max-content 1fr;
@@ -20,9 +23,25 @@ main {
   // padding-left: 3.37rem !important;
   // padding-right: 7.5rem !important;
   padding-bottom: 6rem;
+  background-color: #e5e5e585;
+}
+.BorderColor {
+  border: 1px solid #808080 !important;
 }
 .littleText {
   font-size: 0.75rem;
+}
+.borderActive {
+  border: 1px solid #429523;
+  border-radius: 5px;
+}
+.borderColor {
+  border-bottom: 2px solid #429523;
+}
+.content {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
 }
 @media (min-width: 992px) {
   body {
@@ -49,6 +68,12 @@ main {
     padding-left: 3.37rem !important;
     padding-right: 7.5rem !important;
     padding-bottom: 6rem;
+  }
+}
+@media (max-width: 572px) {
+  .imgControl {
+    height: 200px !important;
+    width: 100% !important;
   }
 }
 .sideLink {
