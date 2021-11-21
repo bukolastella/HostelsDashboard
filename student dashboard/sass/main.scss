@@ -1,5 +1,6 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.02em;
 }
 .studentbox {
   display: grid;
@@ -17,16 +18,16 @@ body {
   width: 15.8rem !important;
 }
 main {
-  // margin-left: 15.8rem !important;
   padding-top: 1.5rem;
-  // padding-left: 3.37rem !important;
-  // padding-right: 7.5rem !important;
+  padding-left: 3.37rem !important;
+  padding-right: 3.37rem !important;
   padding-bottom: 6rem;
   background-color: #e5e5e585;
 }
 .BorderColor {
   border: 1px solid #808080 !important;
 }
+
 .positionCss {
   top: 20px;
   right: 20px;
@@ -38,23 +39,48 @@ main {
 }
 .littleText {
   font-size: 0.75rem;
-}
-.borderActive {
-  border: 1px solid #429523;
-  border-radius: 5px;
-}
-.borderColor {
-  border-bottom: 2px solid #429523;
-}
-.content {
-  font-size: 14px;
-  line-height: 24px;
   letter-spacing: 0.02em;
 }
 .HeaderSize {
   font-size: 1.125rem;
   line-height: 1.75rem;
   letter-spacing: 0.02em;
+}
+.subSize {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.02em;
+}
+.paraText {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.02em;
+}
+.borderActive {
+  border: 1px solid #429523;
+  border-radius: 5px;
+}
+.borderNotActive {
+  border: 1px solid rgba(189, 189, 189, 0.4);
+  border-radius: 5px;
+}
+.borderColor {
+  border-bottom: 2px solid #429523;
+}
+.Content {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.02em;
+}
+.shadowEffect:hover {
+  box-shadow: -3px 3px 5px rgba(128, 128, 128, 0.2) !important;
+  cursor: pointer !important;
+}
+@media (max-width: 400px) {
+  main {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
 }
 @media (max-width: 992px) {
   .MarginBottom {
@@ -165,6 +191,20 @@ $utilities: (
     values: (
       soft: 0px 4px 8px rgba(128, 128, 128, 0.15),
       hover: 0px 16px 24px rgba(128, 128, 128, 0.2),
+    ),
+  ),
+  "font-size": (
+    property: font-size,
+    class: cfs,
+    values: (
+      18: 1.125rem,
+    ),
+  ),
+  "line-height": (
+    property: line-height,
+    class: clh,
+    values: (
+      26: 1.625rem,
     ),
   ),
 );

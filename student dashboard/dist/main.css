@@ -1,5 +1,6 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.02em;
 }
 
 .studentbox {
@@ -27,6 +28,8 @@ body {
 
 main {
   padding-top: 1.5rem;
+  padding-left: 3.37rem !important;
+  padding-right: 3.37rem !important;
   padding-bottom: 6rem;
   background-color: #e5e5e585;
 }
@@ -48,10 +51,34 @@ main {
 
 .littleText {
   font-size: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+.HeaderSize {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.02em;
+}
+
+.subSize {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+.paraText {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.02em;
 }
 
 .borderActive {
   border: 1px solid #429523;
+  border-radius: 5px;
+}
+
+.borderNotActive {
+  border: 1px solid rgba(189, 189, 189, 0.4);
   border-radius: 5px;
 }
 
@@ -60,15 +87,22 @@ main {
 }
 
 .content {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   letter-spacing: 0.02em;
 }
 
-.HeaderSize {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  letter-spacing: 0.02em;
+.shadowEffect:hover {
+  -webkit-box-shadow: -3px 3px 5px rgba(128, 128, 128, 0.2) !important;
+          box-shadow: -3px 3px 5px rgba(128, 128, 128, 0.2) !important;
+  cursor: pointer !important;
+}
+
+@media (max-width: 400px) {
+  main {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
 }
 
 @media (max-width: 992px) {
@@ -8778,28 +8812,8 @@ fieldset:disabled .btn {
   font-family: var(--bs-font-monospace) !important;
 }
 
-.fs-1 {
-  font-size: calc(1.375rem + 1.5vw) !important;
-}
-
-.fs-2 {
-  font-size: calc(1.325rem + 0.9vw) !important;
-}
-
-.fs-3 {
-  font-size: calc(1.3rem + 0.6vw) !important;
-}
-
-.fs-4 {
-  font-size: calc(1.275rem + 0.3vw) !important;
-}
-
-.fs-5 {
-  font-size: 1.25rem !important;
-}
-
-.fs-6 {
-  font-size: 1rem !important;
+.cfs-18 {
+  font-size: 1.125rem !important;
 }
 
 .fst-italic {
@@ -8830,20 +8844,8 @@ fieldset:disabled .btn {
   font-weight: bolder !important;
 }
 
-.lh-1 {
-  line-height: 1 !important;
-}
-
-.lh-sm {
-  line-height: 1.25 !important;
-}
-
-.lh-base {
-  line-height: 1.5 !important;
-}
-
-.lh-lg {
-  line-height: 2 !important;
+.clh-26 {
+  line-height: 1.625rem !important;
 }
 
 .text-start {
@@ -12145,21 +12147,6 @@ fieldset:disabled .btn {
   }
   .text-xxl-center {
     text-align: center !important;
-  }
-}
-
-@media (min-width: 1200px) {
-  .fs-1 {
-    font-size: 2.5rem !important;
-  }
-  .fs-2 {
-    font-size: 2rem !important;
-  }
-  .fs-3 {
-    font-size: 1.75rem !important;
-  }
-  .fs-4 {
-    font-size: 1.5rem !important;
   }
 }
 
