@@ -1,6 +1,7 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 0.02em;
+  background-color: #e5e5e585;
 }
 
 .studentbox {
@@ -31,7 +32,6 @@ main {
   padding-left: 3.37rem !important;
   padding-right: 3.37rem !important;
   padding-bottom: 6rem;
-  background-color: #e5e5e585;
 }
 
 .BorderColor {
@@ -70,6 +70,12 @@ main {
   font-size: 1rem;
   line-height: 1.625rem;
   letter-spacing: 0.02em;
+}
+
+.ProfileSubHeader {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  color: #332600;
 }
 
 .FilterHeader {
@@ -113,7 +119,6 @@ main {
 
 @media (max-width: 327px) {
   .makeWidth {
-    display: block !important;
     width: 100% !important;
   }
 }
@@ -122,6 +127,13 @@ main {
   main {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
+  }
+}
+
+@media (max-width: 572px) {
+  .imgControl {
+    height: 200px !important;
+    width: 100% !important;
   }
 }
 
@@ -167,13 +179,6 @@ main {
     padding-left: 3.37rem !important;
     padding-right: 7.5rem !important;
     padding-bottom: 6rem;
-  }
-}
-
-@media (max-width: 572px) {
-  .imgControl {
-    height: 200px !important;
-    width: 100% !important;
   }
 }
 

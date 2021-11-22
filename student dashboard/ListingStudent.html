@@ -97,7 +97,7 @@
             Dashboard
           </a>
           <a class="nav-link sideLink p-0 mb-4" id="v-pills-tab" role="tablist" aria-orientation="vertical
-          " href="#" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+          " href="#" id="v-pills-Apartment-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Apartment" type="button" role="tab" aria-controls="v-pills-Apartment" aria-selected="true">
             <img
               src="./assests/Home.svg"
               alt="Home icon"
@@ -113,7 +113,7 @@
             />
             Messages</a
           >
-          <a class="nav-link sideLink p-0 mb-4" href="#">
+          <a class="nav-link sideLink p-0 mb-4"  href="#">
             <img
               src="./assests/Send.svg"
               alt="Send icon"
@@ -121,7 +121,8 @@
             />
             Visitation</a
           >
-          <a class="nav-link sideLink p-0 mb-4" href="#">
+          <a class="nav-link sideLink p-0 mb-4" id="v-pills-tab" role="tablist" aria-orientation="vertical
+          " href="#" id="v-pills-Profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Profile" type="button" role="tab" aria-controls="v-pills-Profile" aria-selected="true" href="#">
             <img
               src="./assests/Profile.svg"
               alt="Profile icon"
@@ -133,8 +134,8 @@
       </div>
     </div>
     <div class="tab-content" id="v-pills-tabContent">
-  <!-- <main class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"> -->
-    <main class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+  <main class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+    <!-- <main class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"> -->
       <!-- inner side bar comm -->
       <div class="container">
         <div class="row align-items-end" style="height: 46px">
@@ -763,7 +764,7 @@
   </div>
   <!-- main 2 Apartment details students -->
   <!-- <main class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"> -->
-  <main class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+  <main class="tab-pane fade" id="v-pills-Apartment" role="tabpanel" aria-labelledby="v-pills-Apartment-tab">
     <!-- inner bar -->
     <div class="container">
       <div class="d-flex justify-content-between align-items-center" style="height: 46px">
@@ -887,21 +888,99 @@
         </div>
         <div class=" d-none  d-lg-flex justify-content-center align-content-center flex-column">
           <button class="px-5 py-3 bg-green btn text-white fw-bolder my-4 clh-26">Book a Tour</button>
-          <button class="px-5 py-3 BorderColor btn  fw-bolder hr-green greenBorderColor clh">Rent Hostel</button>
+          <button class="px-5 py-3 btn fw-bolder hr-green greenBorderColor clh-26">Rent Hostel</button>
         </div>
         <!--  -->
         <div class="d-flex justify-content-center align-content-center flex-column bg-light d-lg-none fixed-bottom px-5 py-3 topGreenBorder">
           <button class="px-5 py-3 bg-green btn text-white fw-bolder my-4 clh-26">Book a Tour</button>
-          <button class="px-5 py-3 BorderColor btn  fw-bolder hr-green greenBorderColor clh">Rent Hostel</button>
+          <button class="px-5 py-3 btn  fw-bolder hr-green greenBorderColor clh-26">Rent Hostel</button>
         </div>
       </section>
       <!-- end of right section -->
     </div>
     </div>
   </main>
+<!-- main 3 profile -->
+  <main class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+  <!-- <main  class="tab-pane fade" id="v-pills-Profile" role="tabpanel" aria-labelledby="v-pills-Profile-tab"> -->
+    <h3 class="hr-body-text-color HeaderSize fw-bolder">Profile</h3>
+    <div class="border rounded-3 px-2 px-lg-5 py-4">
+      <!-- top -->
+    <div class="container">
+      <div class="row">
+        <h4 class="col-lg-4 ProfileSubHeader fw-bolder">Profile Details</h4>
+        <div class="col-lg-8">
+          <div class="d-flex mb-4">
+            <img src="./assests/Profilethumbnail.svg" alt="Profile thumbnail">
+            <div class="align-self-center d-flex flex-column ms-3">
+              <span class="ProfileSubHeader">Upload image <span class="hr-base">*</span></span>
+              <span class="subSize hr-grey2">Image dimension must be 160 x 117px</span>
+            </div>
+          </div>
+          <form class=" needs-validation" novalidate>
+              <label for="validationCustom01" class="form-label ProfileSubHeader">Full Name <span class="hr-base">*</span></label>
+              <input type="text" class="form-control mb-4" id="validationCustom01" value="Jayson Emmanuel" placeholder="Enter Name" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+              <label for="validationCustom02" class="form-label ProfileSubHeader">Email Address<span class="hr-base">*</span></label>
+              <input type="email" class="form-control" id="validationCustom02" value="jaysonpeters@gmail.com" placeholder="name@example.com" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>            
+              <div class="d-flex align-items-sm-center flex-wrap flex-column flex-sm-row ">
+                <button class="px-5 py-2 bg-green btn text-white fw-bolder my-4 me-sm-5 clh-26 extendWidth" type="submit">Save</button>
+                <button class="px-5 py-2 btn greenBorderColor fw-bolder  hr-green mb-4 mt-2 mt-sm-4 clh-26 extendWidth" type="submit">Cancel</button>
+              </div>
+          </form>
+        </div>
+      </div>
+      </div>
+      <!--bottom  -->
+      <div class="container mt-4">
+        <div class="row">
+        <h3 class="col-lg-4 hr-body-text-color ProfileSubHeader fw-bolder">Security</h3>
+          <form class="col-lg-8 needs-validation" novalidate>
+              <label for="validationCustom01" class="form-label ProfileSubHeader">Current Password <span class="hr-base">*</span></label>
+              <input type="password" class="form-control  mb-4" id="validationCustom01"placeholder="Enter existing password" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+              <!--  -->
+              <input type="password" class="form-control" id="validationCustom02" placeholder="Enter new password" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>            
+                <button class="px-5 py-2 bg-green btn text-white fw-bolder my-4 me-4 clh-26" type="submit">Change</button>
+          </form>
+      </div>
+    </div>
+      <!--  -->
+    </div>
+  </main>
   </div>
   <!--  -->
     <!-- js -->
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

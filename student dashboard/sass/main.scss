@@ -1,6 +1,7 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 0.02em;
+  background-color: #e5e5e585;
 }
 .studentbox {
   display: grid;
@@ -22,7 +23,7 @@ main {
   padding-left: 3.37rem !important;
   padding-right: 3.37rem !important;
   padding-bottom: 6rem;
-  background-color: #e5e5e585;
+  // background-color: #e5e5e585;
 }
 .BorderColor {
   border: 1px solid #808080 !important;
@@ -55,6 +56,11 @@ main {
   font-size: 1rem;
   line-height: 1.625rem;
   letter-spacing: 0.02em;
+}
+.ProfileSubHeader {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  color: #332600;
 }
 .FilterHeader {
   font-size: 1.1rem !important;
@@ -92,10 +98,21 @@ main {
     width: 100% !important;
   }
 }
+@media (max-width: 377px) {
+  .extendWidth {
+    // width: 100% !important;
+  }
+}
 @media (max-width: 400px) {
   main {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
+  }
+}
+@media (max-width: 572px) {
+  .imgControl {
+    height: 200px !important;
+    width: 100% !important;
   }
 }
 @media (max-width: 992px) {
@@ -133,12 +150,7 @@ main {
     padding-bottom: 6rem;
   }
 }
-@media (max-width: 572px) {
-  .imgControl {
-    height: 200px !important;
-    width: 100% !important;
-  }
-}
+
 .sideLink {
   color: rgba(255, 255, 255, 0.6) !important;
   // &.active {
