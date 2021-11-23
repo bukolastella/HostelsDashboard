@@ -1,8 +1,8 @@
 body {
   font-family: "Poppins", sans-serif !important;
   letter-spacing: 0.02em;
-  background-color: #e5e5e585;
-  background: #e5e5e5 !important;
+  background-color: #e5e5e585 !important;
+  // background: #e5e5e5 !important;
 }
 .studentbox {
   display: grid;
@@ -190,9 +190,7 @@ main {
 // end of custom
 // Custom Message Area
 .MessageArea {
-  // height: 100%;
-  margin-top: 1rem;
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
   overflow-y: auto;
 }
 

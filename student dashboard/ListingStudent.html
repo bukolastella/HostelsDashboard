@@ -114,7 +114,8 @@
             />
             Messages</a
           >
-          <a class="nav-link sideLink p-0 mb-4"  href="#">
+          <a class="nav-link sideLink p-0 mb-4"  id="v-pills-tab" role="tablist" aria-orientation="vertical
+          " href="#" id="v-pills-visitation-tab" data-bs-toggle="pill" data-bs-target="#v-pills-visitation" type="button" role="tab" aria-controls="v-pills-visitation" aria-selected="true" href="#">
             <img
               src="./assests/Send.svg"
               alt="Send icon"
@@ -135,8 +136,8 @@
       </div>
     </div>
     <div class="tab-content" id="v-pills-tabContent">
-      <main class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-    <!-- <main class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"> -->
+      <!-- <main class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"> -->
+    <main class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
       <!-- inner side bar comm -->
       <div class="container">
         <div class="row align-items-end" style="height: 46px">
@@ -905,7 +906,7 @@
   <!-- <main class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"> -->
   <main  class="tab-pane fade" id="v-pills-Profile" role="tabpanel" aria-labelledby="v-pills-Profile-tab">
     <h3 class="hr-body-text-color HeaderSize fw-bolder">Profile</h3>
-    <div class="border rounded-3 px-2 px-lg-5 py-4">
+    <div class="border rounded-3 px-2 px-lg-5 py-4 bg-white">
       <!-- top -->
     <div class="container">
       <div class="row">
@@ -962,8 +963,8 @@
 
 
   <!--main 4 Messages  -->
-  <main class="tab-pane fade show active AdjustDefaultMainPadding" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-  <!-- <main class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"> -->
+  <!-- <main class="tab-pane fade show active AdjustDefaultMainPadding" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"> -->
+  <main class="tab-pane fade AdjustDefaultMainPadding" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
     <div class="container mt-4">
       <div class="row">
         <div class="col-xl-5">
@@ -976,7 +977,7 @@
             </span>
           </div>
           <!--  -->
-          <div class="input-group">
+          <div class="input-group bg-white">
             <div class="input-group-text bg-transparent border-end-0 BorderColor ">
               <img
                 src="./assests/longerSearchIconsvg.svg"
@@ -1085,103 +1086,214 @@
         <!--  -->
 <div class="border-start col-xl-1 ms-2" style="width: 1px"></div>
         <!-- right hand section -->
-        <div class="col-xl-6 d-none d-xl-block bg-white p-3">
-          <!-- <div class="d-flex justify-content-center align-items-center flex-column border rounded-3 bs-soft h-100">
+        <div class="col-xl-6 d-none d-xl-block p-3 ">
+          <div class="d-flex bg-white justify-content-center align-items-center flex-column border rounded-3 bs-soft h-100">
             <h2 class="hr-body-text-color">Hostel Rentie</h2>
             <span class="hr-grey2">Select a chat to start messaging</span>
-          </div> -->
-          <!--mmm  -->
-          <div class="h-100 position-relative">
-            <nav class="d-flex justify-content-between align-items-center">
-              <div>
-                <img src="./assests/MessageProfilePicture1.svg" alt="Profile picture" class="me-3 rounded-circle">
-                Adeleke Oluwakemi
-              </div>
-              <div>
-                <img src="./assests/clip.svg" alt="icon"  class="me-4">
-                <img src="./assests/verticalDot.svg" alt="icon"  class="me-3">
-              </div>
-            </nav>
-<!-- Messaging Area -->
-<div class="MessageArea">
-  <div class="MessageAreaDiv">
-    Yesterday
-  </div>
-  <!-- SpeechReceived bubble -->
-  <div >
-    <div class="SpeechReceived">
-      <div class="SpeechBubbleGrid">
-        If you intend to seek financial support from an investor, a traditional business plan is a must.
-      </div>
-    </div>
-      <span class="SpeechBubbleTime">11:46 AM</span>
-  </div>
-  <!--SpeechSent bubble -->
-  <div class="d-flex flex-column align-items-end" >
-    <div class="SpeechSent">
-      <div class="SpeechBubbleGrid">
-        Very correct
-      </div>
-    </div>
-      <span class="SpeechBubbleTime">11:46 AM</span>
-  </div>
-       <!-- SpeechReceived bubble -->
-<div>
-<div class="SpeechReceived">
-  <div class="SpeechBubbleGrid">
-    Thank you
-  </div>
-</div>
-  <span class="SpeechBubbleTime">11:52 AM</span>
-</div>
-<!--SpeechSent bubble -->
-<div class="d-flex flex-column align-items-end" >
-<div class="SpeechSent">
-  <div class="SpeechBubbleGrid">
-    WIll you be at the conference?
-  </div>
-</div>
-  <span class="SpeechBubbleTime">11:57 AM</span>
-</div>
-</div>
-<!-- End of Messaging Area -->
-<!-- Messaging Footer -->
-<div class="MessageFooter position-absolute bottom-0">
-  <form>
-    <img src="./assests/emoji.svg" alt="emoji face">
-    <input
-      type="text"
-      placeholder="Type a something..."
-    />
-    <img src="./assests/ArrowSend.svg" alt="Arrow send" class="bg-green rounded-circle p-2">
-  </form>
-</div>
-          
-            <!-- End of Messaging Area -->
           </div>
-      
         </div>
       </div>
-          <!-- mmm -->
         </div>
-       
-      </div>
-    </div>
-
   </main>
   <!-- Main 5  Messages chatting-->
-  <!-- <main>
-    <nav class="d-flex justify-content-between">
-      <div>
-        <img src="./assests/MessageProfilePicture1.svg" alt="Profile picture" class="me-3">
-        Adeleke Oluwakemi
+  <!-- <main class="tab-pane fade show active AdjustDefaultMainPadding" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"> -->
+    <main class="tab-pane fade  AdjustDefaultMainPadding" id="v-pills-visitation" role="tabpanel" aria-labelledby="v-pills-visitation-tab">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-xl-5">
+            <!--  -->
+            <div class="d-flex justify-content-between mb-3">
+              <h3 class="hr-body-text-color fw-bolder" style="font-size: 20px">Messages</h3>
+              <span class="hr-green" style="font-size: 14px">
+                <img src="./assests/messageIcon.svg" alt="Message Icon">
+                New Message
+              </span>
+            </div>
+            <!--  -->
+            <div class="input-group bg-white">
+              <div class="input-group-text bg-transparent border-end-0 BorderColor ">
+                <img
+                  src="./assests/longerSearchIconsvg.svg"
+                  alt="Search icon"
+                  class="h-80 w-80"
+                />
+              </div>
+  
+              <input
+                type="text"
+                class="form-control border-start-0 bg-transparent BorderColor"
+                placeholder="Search or start a new message"
+                aria-label="Search or start a new message"
+                aria-describedby="addon-wrapping"
+              />
+            </div>
+            <!--  -->
+            <hr class="hr-grey1 mt-4 mb-4">
+            <!-- item 1 -->
+            <div class="GroupRow bg-white" >
+              <span class="GroupRowImg">
+                <img src='./assests/MessageProfilePicture1.svg' alt="group" />
+              </span>
+              <div class="GroupRowTitle fw-bolder">Adeleke Oluwakemi</div>
+              <span class="GroupRowTime" >4.50 PM</span>
+              <div class="GroupRowNo">
+                <span>
+                  <img src="./assests/checkMark.svg" alt="Check Mark"> 
+                </span>
+                <span>
+                  Will you be at the conference?
+                </span>
+              </div>
+            
+            </div>
+            <!-- item 2 -->
+            <div class="GroupRow bg-white" >
+              <span class="GroupRowImg">
+                <img src='./assests/MessageProfilePicture2.svg' alt="group" />
+              </span>
+              <div class="GroupRowTitle fw-bolder">Nifemi Ajayi</div>
+              <span class="GroupRowTime" >4.50 PM</span>
+              <div class="GroupRowNo">
+                <span>
+                  <img src="./assests/checkMark.svg" alt="Check Mark"> 
+                </span>
+                <span>
+                  I hope you are ready for the international conference
+                </span>
+              </div>
+             
+            </div>
+             <!-- item 3 -->
+             <div class="GroupRow bg-white" >
+              <span class="GroupRowImg">
+                <img src='./assests/MessageProfilePicture3.svg' alt="group" />
+              </span>
+              <div class="GroupRowTitle fw-bolder">Julia Orji</div>
+              <span class="GroupRowTime" >yesterday</span>
+              <div class="GroupRowNo">
+                <span>
+                  <!-- <img src="./assests/checkMark.svg" alt="Check Mark">  -->
+                </span>
+                <span>
+                  Desigining a mind blowing production worthy
+                </span>
+                <span class="GroupRowBubble">3</span>
+              </div>
+           
+            </div>
+             <!--item 4  -->
+             <div class="GroupRow bg-white" >
+              <span class="GroupRowImg">
+                <img src='./assests/MessageProfilePicture4.svg' alt="group" />
+              </span>
+              <div class="GroupRowTitle fw-bolder">Mosunmola Adenike</div>
+              <span class="GroupRowTime" >yesterday</span>
+              <div class="GroupRowNo">
+                <span>
+                  <img src="./assests/checkMark.svg" alt="Check Mark"> 
+                </span>
+                <span>
+                  I just went through your portfolio and it was fire
+                </span>
+              </div>
+            </div>
+             <!-- item 5 -->
+             <div class="GroupRow bg-white" >
+              <span class="GroupRowImg">
+                <img src='./assests/MessageProfilePicture5.svg' alt="group" />
+              </span>
+              <div class="GroupRowTitle fw-bolder">Abiodun Popoola</div>
+              <span class="GroupRowTime" >2d ago</span>
+              <div class="GroupRowNo">
+                <span>
+                  <img src="./assests/checkMark.svg" alt="Check Mark"> 
+                </span>
+                <span>
+                  Lorem ipsum dolor is not good enojhjk jjklk
+                </span>
+              </div>
+            </div>
+  
+            <!--  -->
+          </div>
+          <!--  -->
+  <div class="border-start col-xl-1 ms-2" style="width: 1px"></div>
+          <!-- right hand section -->
+          <div class="col-xl-6 d-none d-xl-block p-3 ">
+            <div class="h-100">
+              <nav class="d-flex justify-content-between align-items-center">
+                <div class="fw-bolder">
+                  <img src="./assests/MessageProfilePicture1.svg" alt="Profile picture" class="me-3 rounded-circle">
+                  Adeleke Oluwakemi
+                </div>
+                <div>
+                  <img src="./assests/clip.svg" alt="icon"  class="me-4">
+                  <img src="./assests/verticalDot.svg" alt="icon"  class="me-3">
+                </div>
+              </nav>
+              <div class=" bg-white d-flex flex-column h-100 pb-4 px-3 mt-2 justify-content-between">
+  <!-- Messaging Area -->
+  <div class="MessageArea">
+    <div class="MessageAreaDiv">
+      Yesterday
+    </div>
+    <!-- SpeechReceived bubble -->
+    <div  class="d-flex flex-column align-items-start my-3">
+      <div class="SpeechReceived">
+        <div class="SpeechBubbleGrid">
+          If you intend to seek financial support from an investor, a traditional business plan is a must.
+        </div>
       </div>
-      <div>
-        <img src="./assests/clip.svg" alt="icon"  class="me-3">
-        <img src="./assests/verticalDot.svg" alt="icon"  class="me-3">
+        <span class="SpeechBubbleTime">11:46 AM</span>
+    </div>
+    <!--SpeechSent bubble -->
+    <div class="d-flex flex-column align-items-end my-3" >
+      <div class="SpeechSent">
+        <div class="SpeechBubbleGrid">
+          Very correct
+        </div>
       </div>
-    </nav>
-  </main> -->
+        <span class="SpeechBubbleTime">11:46 AM</span>
+    </div>
+         <!-- SpeechReceived bubble -->
+  <div class="d-flex flex-column align-items-start my-3">
+  <div class="SpeechReceived">
+    <div class="SpeechBubbleGrid">Thank you</div>
+  </div>
+    <span class="SpeechBubbleTime">11:52 AM</span>
+  </div>
+  <!--SpeechSent bubble -->
+  <div class="d-flex flex-column align-items-end my-3" >
+  <div class="SpeechSent">
+    <div class="SpeechBubbleGrid">
+      WIll you be at the conference?
+    </div>
+  </div>
+    <span class="SpeechBubbleTime">11:57 AM</span>
+  </div>
+  </div>
+  <!-- End of Messaging Area -->
+  <!-- Messaging Footer -->
+  <div class="MessageFooter">
+    <form>
+      <img src="./assests/emoji.svg" alt="emoji face">
+      <input
+        type="text"
+        placeholder="Type a something..."
+      />
+      <img src="./assests/ArrowSend.svg" alt="Arrow send" class="bg-green rounded-circle p-2">
+    </form>
+  </div>
+              </div>
+              <!-- End of Messaging Area -->
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
   </div>
   <!--  -->
     <!-- js -->
