@@ -12,9 +12,9 @@
       crossorigin="anonymous"
     /> -->
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <!--  -->
     <link href="./dist/main.css" rel="stylesheet" />
     <title>Document</title>
@@ -105,7 +105,8 @@
             />
             Listing</a
           >
-          <a class="nav-link sideLink p-0 mb-4" href="#">
+          <a class="nav-link sideLink p-0 mb-4" id="v-pills-tab" role="tablist" aria-orientation="vertical
+          " href="#" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="true" href="#">
             <img
               src="./assests/Message.svg"
               alt="Message icon"
@@ -134,7 +135,7 @@
       </div>
     </div>
     <div class="tab-content" id="v-pills-tabContent">
-  <main class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+      <main class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
     <!-- <main class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"> -->
       <!-- inner side bar comm -->
       <div class="container">
@@ -901,8 +902,8 @@
     </div>
   </main>
 <!-- main 3 profile -->
-  <main class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-  <!-- <main  class="tab-pane fade" id="v-pills-Profile" role="tabpanel" aria-labelledby="v-pills-Profile-tab"> -->
+  <!-- <main class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"> -->
+  <main  class="tab-pane fade" id="v-pills-Profile" role="tabpanel" aria-labelledby="v-pills-Profile-tab">
     <h3 class="hr-body-text-color HeaderSize fw-bolder">Profile</h3>
     <div class="border rounded-3 px-2 px-lg-5 py-4">
       <!-- top -->
@@ -957,6 +958,158 @@
     </div>
       <!--  -->
     </div>
+  </main>
+
+
+  <!--main 4 Messages  -->
+  <main class="tab-pane fade show active AdjustDefaultMainPadding" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+  <!-- <main class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"> -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-xl-5">
+          <!--  -->
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <h2 class="hr-body-text-color">Messages</h2>
+            <span class="hr-green">
+              <img src="./assests/messageIcon.svg" alt="Message Icon">
+              New Message
+            </span>
+          </div>
+          <!--  -->
+          <div class="input-group">
+            <div class="input-group-text bg-transparent border-end-0 BorderColor ">
+              <img
+                src="./assests/longerSearchIconsvg.svg"
+                alt="Search icon"
+                class="h-80 w-80"
+              />
+            </div>
+
+            <input
+              type="text"
+              class="form-control border-start-0 bg-transparent BorderColor"
+              placeholder="Search or start a new message"
+              aria-label="Search or start a new message"
+              aria-describedby="addon-wrapping"
+            />
+          </div>
+          <!--  -->
+          <hr class="hr-grey1 mt-4 mb-4">
+          <!-- item 1 -->
+          <!-- <div class="container py-3 px-3 border rounded-3 bs-soft my-4">
+            <div class="row align-items-center justify-content-start">
+               <div class="col-auto pe-0">
+                 <img src="./assests/MessageProfilePicture1.svg" alt="Human Picture" class="rounded-circle img-fluid  ">
+               </div>
+              
+               <div class="container col-8 px-0">
+                 <div class="row">
+                   <h4 class="col-9 HeaderSize mb-0">Adeleke Oluwakemi</h4>
+                   <span class="col-3 text-end" style="font-size: 12px">4.50 PM</span>
+                   <span style="font-size: 14px" class="d-flex align-items-center"><img src="./assests/checkMark.svg" alt="Check Mark" class="me-2 img-fluid"> <span class="text-truncate">Will you be at the conference?</span></span>
+                 </div>
+               </div>
+            </div>
+          </div> -->
+          <div class="GroupRow" >
+            <span class="GroupRowImg">
+              <img src='./assests/MessageProfilePicture1.svg' alt="group" />
+            </span>
+            <div class="GroupRowTitle">Adeleke Oluwakemi</div>
+            <span class="GroupRowTime" >4.50 PM</span>
+            <div class="GroupRowNo">
+              <span>
+                <img src="./assests/checkMark.svg" alt="Check Mark"> 
+              </span>
+              <span>
+                Will you be at the conference?
+              </span>
+            </div>
+            <span class="GroupRowArrow">
+              <i className="fas fa-angle-down"></i>
+            </span>
+          </div>
+          <!-- item 2 -->
+          <div class="container py-3 px-3 border rounded-3 bs-soft my-4">
+            <div class="row align-items-center justify-content-start">
+               <div class="col-auto pe-0">
+                 <img src="./assests/MessageProfilePicture2.svg" alt="Human Picture" class="rounded-circle img-fluid  ">
+               </div>
+              
+               <div class="container col-9 px-0">
+                 <div class="row">
+                   <h4 class="col-9 HeaderSize mb-0">Nifemi Ajayi</h4>
+                   <span class="col-3 text-end" style="font-size: 12px">4.50 PM</span>
+                   <span style="font-size: 14px" class="d-flex align-items-center"><img src="./assests/checkMark.svg" alt="Check Mark" class="me-2 img-fluid"> <span class="text-truncate">I hope you are ready for the international conference</span></span>
+                 </div>
+               </div>
+            </div>
+          </div>
+           <!-- item 3 -->
+           <div class="container py-3 px-3 border rounded-3 bs-soft  my-4">
+             <div class="row align-items-center justify-content-start">
+                <div class="col-auto pe-0">
+                  <img src="./assests/MessageProfilePicture3.svg" alt="Human Picture" class="rounded-circle img-fluid  ">
+                </div>
+               
+                <div class="container col-9 px-0">
+                  <div class="row">
+                    <h4 class="col-9 HeaderSize mb-0">Julia Orji</h4>
+                    <span class="col-3 text-end" style="font-size: 12px">4.50 PM</span>
+                    <span style="font-size: 14px" class="d-flex align-items-center"><img src="./assests/checkMark.svg" alt="Check Mark" class="me-2 img-fluid"> <span class="text-truncate">Desigining a mind blowing production worthy</span></span>
+                  </div>
+                </div>
+             </div>
+           </div>
+          
+           <!--item 4  -->
+           <div class="container py-3 px-3 border rounded-3 bs-soft  my-4">
+            <div class="row align-items-center justify-content-start">
+               <div class="col-auto pe-0">
+                 <img src="./assests/MessageProfilePicture4.svg" alt="Human Picture" class="rounded-circle img-fluid  ">
+               </div>
+              
+               <div class="container col-9 px-0">
+                 <div class="row">
+                   <h4 class="col-9 HeaderSize mb-0">Mosunmola Adenike</h4>
+                   <span class="col-3 text-end" style="font-size: 12px">4.50 PM</span>
+                   <span style="font-size: 14px" class="d-flex align-items-center"><img src="./assests/checkMark.svg" alt="Check Mark" class="me-2 img-fluid"> <span class="text-truncate">I just went through your portfolio and it was fire</span></span>
+                 </div>
+               </div>
+            </div>
+          </div>
+           <!-- item 5 -->
+           <div class="container py-3 px-3 border rounded-3 bs-soft  my-4">
+            <div class="row align-items-center justify-content-start">
+               <div class="col-auto pe-0">
+                 <img src="./assests/MessageProfilePicture5.svg" alt="Human Picture" class="rounded-circle img-fluid  ">
+               </div>
+              
+               <div class="container col-9 px-0">
+                 <div class="row">
+                   <h4 class="col-9 HeaderSize mb-0">Abiodun Popoola</h4>
+                   <span class="col-3 text-end" style="font-size: 12px">2d ago</span>
+                   <span style="font-size: 14px" class="d-flex align-items-center"><img src="./assests/checkMark.svg" alt="Check Mark" class="me-2 img-fluid"> <span class="text-truncate">Lorem ipsum dolor is not good enojhjk jjklk</span></span>
+                 </div>
+               </div>
+            </div>
+          </div>
+
+          <!--  -->
+        </div>
+        <!--  -->
+<div class="border-start col-xl-1 ms-2" style="width: 1px"></div>
+        <!--  -->
+        <div class="col-xl-6 d-none d-xl-block">
+          <div class="d-flex justify-content-center align-items-center flex-column border rounded-3 bs-soft h-100">
+            <h2 class="hr-body-text-color">Hostel Rentie</h2>
+            <span class="hr-grey2">Select a chat to start messaging</span>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
   </main>
   </div>
   <!--  -->

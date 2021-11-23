@@ -1,5 +1,5 @@
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   letter-spacing: 0.02em;
   background-color: #e5e5e585;
 }
@@ -93,6 +93,83 @@ main {
   box-shadow: -3px 3px 5px rgba(128, 128, 128, 0.2) !important;
   cursor: pointer !important;
 }
+// custom
+
+.GroupRow {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  grid-template-columns: 60px 1fr 70px;
+  grid-template-columns: minmax(0, 60px) 1fr 70px;
+  grid-template-rows: 30px 30px;
+  column-gap: 10px;
+  text-decoration: none;
+  padding: 1rem 0.5rem;
+  background-size: 100% 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+}
+@media (hover: hover) and (pointer: fine) {
+  .GroupRow:hover {
+    position: relative;
+    background: #c4c4c4;
+    box-shadow: 0px 16px 24px rgba(128, 128, 128, 0.2);
+  }
+  .GroupRow:hover .GroupRowArrow {
+    display: block;
+  }
+  .GroupRow:hover .GroupRowNo {
+    width: 80%;
+  }
+}
+
+.GroupRowImg {
+  width: 100%;
+  border-radius: 50%;
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+
+.GroupRowImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.GroupRowTitle {
+  text-transform: capitalize;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  align-self: flex-end;
+}
+.GroupRowTime {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.GroupRowNo {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  grid-column: 2/-1;
+  padding: 1.29rem 0rem;
+  align-self: center;
+  font-size: 14px;
+}
+.GroupRowNo span:nth-child(1) {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.GroupRowArrow {
+  justify-self: center;
+  display: none;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  color: #888c8f;
+}
+// end of custom
 @media (max-width: 327px) {
   .makeWidth {
     width: 100% !important;
@@ -108,6 +185,12 @@ main {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
+}
+@media (max-width: 540px) {
+  // .AdjustDefaultMainPadding {
+  //   padding-left: 0 !important;
+  //   padding-right: 0 !important;
+  // }
 }
 @media (max-width: 572px) {
   .imgControl {
@@ -148,6 +231,10 @@ main {
     padding-left: 3.37rem !important;
     padding-right: 7.5rem !important;
     padding-bottom: 6rem;
+  }
+  .AdjustDefaultMainPadding {
+    padding-left: 2.06rem !important;
+    padding-right: 3.2rem !important;
   }
 }
 
