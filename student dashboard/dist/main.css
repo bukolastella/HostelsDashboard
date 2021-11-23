@@ -137,6 +137,7 @@ main {
   background-size: 100% 5px;
   cursor: pointer;
   border-radius: 5px;
+  margin: 2rem 0;
   -webkit-box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
           box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
 }
@@ -180,7 +181,6 @@ main {
 }
 
 .GroupRowTime {
-  text-transform: uppercase;
   font-size: 12px;
 }
 
@@ -191,24 +191,48 @@ main {
   grid-column: 2/-1;
   padding: 1.29rem 0rem;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
   font-size: 14px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .GroupRowNo span:nth-child(1) {
-  font-weight: bold;
-  font-size: 0.9rem;
+  margin-right: 0.5rem;
 }
 
-.GroupRowArrow {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  display: none;
+.GroupRowNo span:nth-child(2) {
+  display: block;
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.GroupRowBubble {
   position: absolute;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  color: #888c8f;
+  right: 0;
+  top: 35%;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #429523;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 327px) {
@@ -219,6 +243,13 @@ main {
 
 @media (max-width: 400px) {
   main {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+@media (max-width: 470px) {
+  .AdjustDefaultMainPadding {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
