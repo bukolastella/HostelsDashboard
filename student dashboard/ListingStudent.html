@@ -968,9 +968,9 @@
       <div class="row">
         <div class="col-xl-5">
           <!--  -->
-          <div class="d-flex justify-content-between align-items-start mb-3">
-            <h2 class="hr-body-text-color">Messages</h2>
-            <span class="hr-green">
+          <div class="d-flex justify-content-between mb-3">
+            <h3 class="hr-body-text-color fw-bolder" style="font-size: 20px">Messages</h3>
+            <span class="hr-green" style="font-size: 14px">
               <img src="./assests/messageIcon.svg" alt="Message Icon">
               New Message
             </span>
@@ -996,11 +996,11 @@
           <!--  -->
           <hr class="hr-grey1 mt-4 mb-4">
           <!-- item 1 -->
-          <div class="GroupRow" >
+          <div class="GroupRow bg-white" >
             <span class="GroupRowImg">
               <img src='./assests/MessageProfilePicture1.svg' alt="group" />
             </span>
-            <div class="GroupRowTitle">Adeleke Oluwakemi</div>
+            <div class="GroupRowTitle fw-bolder">Adeleke Oluwakemi</div>
             <span class="GroupRowTime" >4.50 PM</span>
             <div class="GroupRowNo">
               <span>
@@ -1013,11 +1013,11 @@
           
           </div>
           <!-- item 2 -->
-          <div class="GroupRow" >
+          <div class="GroupRow bg-white" >
             <span class="GroupRowImg">
               <img src='./assests/MessageProfilePicture2.svg' alt="group" />
             </span>
-            <div class="GroupRowTitle">Nifemi Ajayi</div>
+            <div class="GroupRowTitle fw-bolder">Nifemi Ajayi</div>
             <span class="GroupRowTime" >4.50 PM</span>
             <div class="GroupRowNo">
               <span>
@@ -1030,11 +1030,11 @@
            
           </div>
            <!-- item 3 -->
-           <div class="GroupRow" >
+           <div class="GroupRow bg-white" >
             <span class="GroupRowImg">
               <img src='./assests/MessageProfilePicture3.svg' alt="group" />
             </span>
-            <div class="GroupRowTitle">Julia Orji</div>
+            <div class="GroupRowTitle fw-bolder">Julia Orji</div>
             <span class="GroupRowTime" >yesterday</span>
             <div class="GroupRowNo">
               <span>
@@ -1048,11 +1048,11 @@
          
           </div>
            <!--item 4  -->
-           <div class="GroupRow" >
+           <div class="GroupRow bg-white" >
             <span class="GroupRowImg">
               <img src='./assests/MessageProfilePicture4.svg' alt="group" />
             </span>
-            <div class="GroupRowTitle">Mosunmola Adenike</div>
+            <div class="GroupRowTitle fw-bolder">Mosunmola Adenike</div>
             <span class="GroupRowTime" >yesterday</span>
             <div class="GroupRowNo">
               <span>
@@ -1064,11 +1064,11 @@
             </div>
           </div>
            <!-- item 5 -->
-           <div class="GroupRow" >
+           <div class="GroupRow bg-white" >
             <span class="GroupRowImg">
               <img src='./assests/MessageProfilePicture5.svg' alt="group" />
             </span>
-            <div class="GroupRowTitle">Abiodun Popoola</div>
+            <div class="GroupRowTitle fw-bolder">Abiodun Popoola</div>
             <span class="GroupRowTime" >2d ago</span>
             <div class="GroupRowNo">
               <span>
@@ -1084,18 +1084,104 @@
         </div>
         <!--  -->
 <div class="border-start col-xl-1 ms-2" style="width: 1px"></div>
-        <!--  -->
-        <div class="col-xl-6 d-none d-xl-block">
-          <div class="d-flex justify-content-center align-items-center flex-column border rounded-3 bs-soft h-100">
+        <!-- right hand section -->
+        <div class="col-xl-6 d-none d-xl-block bg-white p-3">
+          <!-- <div class="d-flex justify-content-center align-items-center flex-column border rounded-3 bs-soft h-100">
             <h2 class="hr-body-text-color">Hostel Rentie</h2>
             <span class="hr-grey2">Select a chat to start messaging</span>
-          </div>
+          </div> -->
+          <!--mmm  -->
+          <div class="h-100 position-relative">
+            <nav class="d-flex justify-content-between align-items-center">
+              <div>
+                <img src="./assests/MessageProfilePicture1.svg" alt="Profile picture" class="me-3 rounded-circle">
+                Adeleke Oluwakemi
+              </div>
+              <div>
+                <img src="./assests/clip.svg" alt="icon"  class="me-4">
+                <img src="./assests/verticalDot.svg" alt="icon"  class="me-3">
+              </div>
+            </nav>
+<!-- Messaging Area -->
+<div class="MessageArea">
+  <div class="MessageAreaDiv">
+    Yesterday
+  </div>
+  <!-- SpeechReceived bubble -->
+  <div >
+    <div class="SpeechReceived">
+      <div class="SpeechBubbleGrid">
+        If you intend to seek financial support from an investor, a traditional business plan is a must.
+      </div>
+    </div>
+      <span class="SpeechBubbleTime">11:46 AM</span>
+  </div>
+  <!--SpeechSent bubble -->
+  <div class="d-flex flex-column align-items-end" >
+    <div class="SpeechSent">
+      <div class="SpeechBubbleGrid">
+        Very correct
+      </div>
+    </div>
+      <span class="SpeechBubbleTime">11:46 AM</span>
+  </div>
+       <!-- SpeechReceived bubble -->
+<div>
+<div class="SpeechReceived">
+  <div class="SpeechBubbleGrid">
+    Thank you
+  </div>
+</div>
+  <span class="SpeechBubbleTime">11:52 AM</span>
+</div>
+<!--SpeechSent bubble -->
+<div class="d-flex flex-column align-items-end" >
+<div class="SpeechSent">
+  <div class="SpeechBubbleGrid">
+    WIll you be at the conference?
+  </div>
+</div>
+  <span class="SpeechBubbleTime">11:57 AM</span>
+</div>
+</div>
+<!-- End of Messaging Area -->
+<!-- Messaging Footer -->
+<div class="MessageFooter position-absolute bottom-0">
+  <form>
+    <img src="./assests/emoji.svg" alt="emoji face">
+    <input
+      type="text"
+      placeholder="Type a something..."
+    />
+    <img src="./assests/ArrowSend.svg" alt="Arrow send" class="bg-green rounded-circle p-2">
+  </form>
+</div>
           
+            <!-- End of Messaging Area -->
+          </div>
+      
         </div>
+      </div>
+          <!-- mmm -->
+        </div>
+       
       </div>
     </div>
 
   </main>
+  <!-- Main 5  Messages chatting-->
+  <!-- <main>
+    <nav class="d-flex justify-content-between">
+      <div>
+        <img src="./assests/MessageProfilePicture1.svg" alt="Profile picture" class="me-3">
+        Adeleke Oluwakemi
+      </div>
+      <div>
+        <img src="./assests/clip.svg" alt="icon"  class="me-3">
+        <img src="./assests/verticalDot.svg" alt="icon"  class="me-3">
+      </div>
+    </nav>
+  </main> -->
   </div>
   <!--  -->
     <!-- js -->
