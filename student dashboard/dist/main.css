@@ -435,7 +435,7 @@ main {
             align-items: center !important;
     -webkit-box-pack: end !important;
         -ms-flex-pack: end !important;
-            justify-content: end !important;
+            justify-content: flex-end !important;
   }
   main {
     margin-left: 15.8rem !important;
