@@ -42,21 +42,20 @@ main {
   padding: 0.3rem 0.5rem;
   border-radius: 5px;
 }
-.ArrowStylingLeft {
-  background-color: white;
-  padding: 0.5rem;
-  border-radius: 5px;
-  top: 50px;
-  left: 20px;
-  cursor: pointer;
-}
+.ArrowStylingLeft,
 .ArrowStylingRight {
   background-color: white;
   padding: 0.5rem;
   border-radius: 5px;
-  top: 50px;
-  right: 20px;
+  top: 50%;
   cursor: pointer;
+  transform: translateY(-50%);
+}
+.ArrowStylingLeft {
+  left: 20px;
+}
+.ArrowStylingRight {
+  right: 20px;
 }
 .greenBorderColor {
   border: 1px solid #429523 !important;
@@ -378,7 +377,7 @@ main {
   .HomeImageDiv {
     padding: 0 !important;
     height: 192px !important;
-    img {
+    img:nth-child(2) {
       object-fit: cover;
       border-radius: 10px 10px 0px 0px !important;
     }
