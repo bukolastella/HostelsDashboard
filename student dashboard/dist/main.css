@@ -55,6 +55,24 @@ main {
   border-radius: 5px;
 }
 
+.ArrowStylingLeft {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  top: 50px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.ArrowStylingRight {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  top: 50px;
+  right: 20px;
+  cursor: pointer;
+}
+
 .greenBorderColor {
   border: 1px solid #429523 !important;
 }

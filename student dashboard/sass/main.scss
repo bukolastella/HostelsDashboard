@@ -32,17 +32,31 @@ main {
   padding-left: 3.37rem !important;
   padding-right: 3.37rem !important;
   padding-bottom: 6rem;
-  // background-color: #e5e5e585;
 }
 .BorderColor {
   border: 1px solid #808080 !important;
 }
-
 .positionCss {
   top: 20px;
   right: 20px;
   padding: 0.3rem 0.5rem;
   border-radius: 5px;
+}
+.ArrowStylingLeft {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  top: 50px;
+  left: 20px;
+  cursor: pointer;
+}
+.ArrowStylingRight {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  top: 50px;
+  right: 20px;
+  cursor: pointer;
 }
 .greenBorderColor {
   border: 1px solid #429523 !important;
@@ -103,7 +117,6 @@ main {
   cursor: pointer !important;
 }
 // custom
-
 .GroupRow {
   display: grid;
   width: 100%;
