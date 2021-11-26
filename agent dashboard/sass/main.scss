@@ -1,0 +1,232 @@
+body {
+  font-family: "Poppins", sans-serif !important;
+  letter-spacing: 0.02em;
+  background-color: #e5e5e585 !important;
+}
+html {
+  font-size: 100% !important;
+}
+
+.sideLink {
+  color: rgba(255, 255, 255, 0.6) !important;
+  margin-bottom: 2rem;
+  img {
+    filter: brightness(0) invert(1);
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 87.5% !important;
+  }
+}
+.studentbox {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: 1.6rem 1.6rem;
+  img {
+    grid-row: 1/-1;
+  }
+}
+.navLogo {
+  width: 15.8rem;
+  height: 100%;
+}
+.sidebar--nav {
+  width: 15.8rem !important;
+}
+main {
+  padding-top: 1.5rem;
+  padding-left: 3.37rem !important;
+  padding-right: 3.37rem !important;
+  padding-bottom: 6rem;
+}
+@media (max-width: 430px) {
+  main {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+@media (max-width: 400px) {
+  main {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+@media (max-width: 470px) {
+  .AdjustDefaultMainPadding {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  .offcanvas-backdrop::before {
+    display: none !important;
+  }
+  .sidebar--nav {
+    transform: none !important;
+    visibility: visible !important;
+    top: 0 !important;
+    height: calc(100% - 0px);
+  }
+  .hi {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+  }
+  main {
+    margin-left: 15.8rem !important;
+    padding-top: 1.5rem;
+    padding-left: 3.37rem !important;
+    padding-right: 7.5rem !important;
+    padding-bottom: 6rem;
+  }
+  .AdjustDefaultMainPadding {
+    padding-left: 2.06rem !important;
+    padding-right: 3.2rem !important;
+  }
+}
+
+// Main Dashboard
+.mainDashboardCards {
+  min-width: 300px;
+  max-width: 100%;
+  background-color: #ffffff;
+  border: 1px solid rgba(189, 189, 189, 0.4);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.shapeImage {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &1 {
+    background-color: #00aeff;
+  }
+  &2 {
+    background-color: #ea4ada;
+  }
+  &3 {
+    background-color: #076d6f;
+  }
+}
+.Dot {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  // border-radius: 50%;
+  &1 {
+    background-color: #5b4dbe;
+  }
+  &2 {
+    background-color: #ffbe21;
+  }
+  &3 {
+    background-color: #ff7235;
+  }
+}
+.apexcharts-toolbar,
+.apexcharts-legend {
+  display: none !important;
+}
+.CustomGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 1rem;
+  @media (max-width: 1230px) {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+}
+//
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/utilities";
+
+$utilities: (
+  "text-color": (
+    property: color,
+    class: hr,
+    values: (
+      base: #f44336,
+      green: #429523,
+      off-white: #fbfbfb,
+      blue: #f3f8ff,
+      header-text-color: #16320c,
+      body-text-color: #0d1e07,
+      light-green: #62a748,
+      dark-grey: #333333,
+      grey1: #808080,
+      grey2: #999999,
+      bg-white: #f8f9fa,
+      stroke: rgba(189, 189, 189, 0.4),
+    ),
+  ),
+  "background": (
+    property: background-color,
+    class: bg,
+    values: (
+      base: #f44336,
+      green: #429523,
+      off-white: #fbfbfb,
+      blue: #f3f8ff,
+      header-text-color: #16320c,
+      body-text-color: #0d1e07,
+      light-green: #62a748,
+      dark-grey: #333333,
+      grey1: #808080,
+      grey2: #999999,
+      bg-white: #f8f9fa,
+      stroke: rgba(189, 189, 189, 0.4),
+    ),
+  ),
+  "box-shadow": (
+    property: box-shadow,
+    class: bs,
+    values: (
+      soft: 0px 4px 8px rgba(128, 128, 128, 0.15),
+      chart: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02),
+      hover: 0px 16px 24px rgba(128, 128, 128, 0.2),
+    ),
+  ),
+  "font-size": (
+    property: font-size,
+    class: cfs,
+    values: (
+      14: 0.875rem,
+      18: 1.125rem,
+      24: 1.5rem,
+    ),
+  ),
+  "font-weight": (
+    property: font-weight,
+    class: fw,
+    values: (
+      light: $font-weight-light,
+      lighter: $font-weight-lighter,
+      normal: $font-weight-normal,
+      bold: $font-weight-bold,
+      bolder: $font-weight-bolder,
+      600: 600,
+    ),
+  ),
+  "line-height": (
+    property: line-height,
+    class: clh,
+    values: (
+      24: 1.5rem,
+      26: 1.625rem,
+      28: 1.75rem,
+      38: 2.375rem,
+    ),
+  ),
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
