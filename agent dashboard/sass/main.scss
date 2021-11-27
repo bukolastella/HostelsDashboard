@@ -121,7 +121,7 @@ main {
   width: 8px;
   height: 8px;
   display: inline-block;
-  // border-radius: 50%;
+  border-radius: 50%;
   &1 {
     background-color: #5b4dbe;
   }
@@ -140,7 +140,7 @@ main {
   display: grid;
   grid-template-columns: 2fr 1fr;
   column-gap: 1rem;
-  @media (max-width: 1230px) {
+  @media (max-width: 1310px) {
     grid-template-columns: 1fr;
     row-gap: 1rem;
   }

@@ -302,26 +302,24 @@
           <!--  -->
           <div class="p-4 bg-white rounded-3 bs-chart">
             <h3 class="cfs-18 clh-28 fw-bold mb-0">Rented Hostels by Campus</h3>
-            <div class="d-flex flex-column align-items-center">
-              <div id="donutchart"></div>
-              <!-- 1 -->
-              <div class="mb-2">
-                <span class="Dot Dot1 me-2"></span>
-                <span class="me-4 fw-600 clh-26">Unilag Campus</span>
-                <span class="clh-28 fw-bold">$ 1,753.92</span>
-              </div>
-              <!-- 2 -->
-              <div class="mb-2">
-                <span class="Dot Dot2 me-2"></span>
-                <span class="me-4 fw-600 clh-26">EKSU Campus</span>
-                <span class="clh-28 fw-bold">$ 1,019.68</span>
-              </div>
-              <!-- 3 -->
-              <div class="mb-2">
-                <span class="Dot Dot3 me-2"></span>
-                <span class="me-4 fw-600 clh-26">OAU Campus</span>
-                <span class="clh-28 fw-bold">$ 952.68</span>
-              </div>
+            <div id="donutchart"></div>
+            <!-- 1 -->
+            <div class="mb-2 d-flex align-items-center">
+              <span class="Dot Dot1 me-3"></span>
+              <span class="fw-600 clh-26">Unilag Campus</span>
+              <span class="clh-28 fw-bold ms-auto">$ 1,753.92</span>
+            </div>
+            <!-- 2 -->
+            <div class="mb-2 d-flex align-items-center">
+              <span class="Dot Dot2 me-3"></span>
+              <span class="fw-600 clh-26">EKSU Campus</span>
+              <span class="clh-28 fw-bold ms-auto">$ 1,019.68</span>
+            </div>
+            <!-- 3 -->
+            <div class="mb-2 d-flex align-items-center">
+              <span class="Dot Dot3 me-3"></span>
+              <span class="fw-600 clh-26">OAU Campus</span>
+              <span class="clh-28 fw-bold ms-auto">$ 952.68</span>
             </div>
           </div>
         </div>
@@ -458,19 +456,19 @@
         //     return val + " - " + opts.w.globals.series[opts.seriesIndex];
         //   },
         // },
-        responsive: [
-          {
-            breakpoint: 480,
-            options: {
-              chart: {
-                width: 200,
-              },
-              legend: {
-                position: "bottom",
-              },
-            },
-          },
-        ],
+        // responsive: [
+        //   {
+        //     breakpoint: 480,
+        //     options: {
+        //       chart: {
+        //         width: 200,
+        //       },
+        //       legend: {
+        //         position: "bottom",
+        //       },
+        //     },
+        //   },
+        // ],
       };
 
       var chart = new ApexCharts(
