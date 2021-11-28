@@ -145,7 +145,283 @@ main {
     row-gap: 1rem;
   }
 }
+// Listing
+.borderColor {
+  border-bottom: 2px solid #429523;
+}
+.marginTop {
+  margin-top: 1rem;
+  @media (max-width: 767px) {
+    .marginTop {
+      margin-top: 5rem;
+    }
+  }
+}
+//modal
+.PositionCloseButton {
+  top: -3.125rem;
+  right: -2.5rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+}
+@media (max-width: 452px) {
+  .makeWidth {
+    width: 100% !important;
+  }
+}
+// messages main
+// custom individual chats room
+.GroupRow {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  grid-template-columns: 3.75rem 1fr 4.375rem;
+  grid-template-columns: minmax(0, 3.75rem) 1fr 4.375rem;
+  grid-template-rows: 1.875rem 1.875rem;
+  column-gap: 0.625rem;
+  text-decoration: none;
+  padding: 1rem 0.5rem;
+  background-size: 100% 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 2rem 0;
+  box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+}
+@media (hover: hover) and (pointer: fine) {
+  .GroupRow:hover {
+    position: relative;
+    background: #c4c4c4;
+    box-shadow: 0px 16px 24px rgba(128, 128, 128, 0.2);
+  }
+  .GroupRow:hover .GroupRowArrow {
+    display: block;
+  }
+  .GroupRow:hover .GroupRowNo {
+    width: 80%;
+  }
+}
+
+.GroupRowImg {
+  width: 100%;
+  border-radius: 50%;
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+
+.GroupRowImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.GroupRowTitle {
+  text-transform: capitalize;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  align-self: flex-end;
+  line-height: 1.5rem;
+  letter-spacing: 0.15px;
+  color: #1f2430;
+}
+.GroupRowTime {
+  font-size: 0.75rem;
+}
+.GroupRowNo {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  grid-column: 2/-1;
+  padding: 1.29rem 0rem;
+  align-self: center;
+  font-size: 14px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.GroupRowNo span:nth-child(1) {
+  margin-right: 0.5rem;
+}
+.GroupRowNo span:nth-child(2) {
+  display: block;
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.GroupRowBubble {
+  position: absolute;
+  right: 0;
+  top: 35%;
+  color: white;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background-color: #429523;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// end of custom
+// Custom Message Area
+.MessageArea {
+  padding: 0rem 2rem;
+  overflow-y: auto;
+}
+
+@media (max-width: 335px) {
+  .MessageArea {
+    padding: 1rem 0;
+  }
+}
+.MessageAreaDiv {
+  color: #797c83;
+  text-align: center;
+  margin: 1rem 0;
+  text-transform: capitalize;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}
+
 //
+.SpeechSent,
+.SpeechReceived {
+  max-width: 31.25rem;
+  margin-bottom: 0.3125rem;
+  border-radius: 0.625rem;
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+  position: relative;
+}
+.SpeechReceived {
+  background: #ecf0f3;
+  align-self: flex-start;
+  color: #1f2430;
+}
+.SpeechSent {
+  align-self: flex-end;
+  cursor: pointer;
+  background: #62a748;
+  color: #ffffff;
+}
+
+.SpeechReceived:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid transparent;
+  border-right: 15px solid #ecf0f3;
+  border-top: 15px solid #ecf0f3;
+  border-bottom: 15px solid transparent;
+  left: -10px;
+  top: 0px;
+}
+
+.SpeechSent:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid #62a748;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #62a748;
+  border-bottom: 15px solid transparent;
+  right: -10px;
+  top: 0px;
+}
+.SpeechBubbleGrid {
+  text-align: left;
+}
+
+.SpeechBubbleTime {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  text-align: center;
+  color: #797c83;
+  text-transform: capitalize;
+}
+
+@media (max-width: 335px) {
+  .SpeechReceived,
+  .SpeechSent {
+    align-self: center;
+  }
+}
+// End Custom Message Area
+// Messaging Footer
+.MessageFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0rem 0.5rem 1rem;
+  border: 1px solid #b5b5b5;
+  border-radius: 40px;
+  width: 100%;
+}
+.MessageFooter form {
+  background-color: rgba(255, 255, 255, 0.63);
+  width: 100%;
+  height: 1.875rem;
+  border-radius: 20px;
+  padding: 0.3rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.MessageFooter form input {
+  background-color: transparent;
+  padding: 0 0.5rem;
+  outline: none;
+  border: none;
+  color: black;
+  width: 100%;
+  height: 100%;
+}
+// End of messaging footer
+
+// Analytics section
+@mixin AnalyticsNo {
+  width: 27px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.Circle1 {
+  @include AnalyticsNo();
+  background-color: #5cc874;
+  color: white;
+}
+.Circle2 {
+  background-color: #e0e0e0;
+  @include AnalyticsNo();
+  color: black;
+}
+.Circle3 {
+  background-color: #ff3a29;
+  @include AnalyticsNo();
+  color: white;
+}
+.Circle4 {
+  background-color: #ffe5d3;
+  @include AnalyticsNo();
+  color: black;
+}
+.Circle5 {
+  background-color: #ffba49;
+  @include AnalyticsNo();
+  color: white;
+}
+.Circle6 {
+  background-color: #20224f;
+  @include AnalyticsNo();
+  color: white;
+}
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/utilities";
