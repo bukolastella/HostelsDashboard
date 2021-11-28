@@ -1127,11 +1127,23 @@
             </div>
           </div>
         </div>
-        <!-- bottom part -->
-        <div>
-          <div>
-            <h3>Payment Statistics</h3>
-            <div class="d-flex justify-content-between flex-column ps-2 pe-5">
+
+        <div class="changeLayout mt-3">
+          <!-- bottom part -->
+          <div class="p-3 bg-white">
+            <h3 class="pb-4 border-bottom clh-24 fw-bold cfs-14">
+              Payment Statistics
+            </h3>
+            <div
+              class="
+                d-flex
+                justify-content-between
+                flex-column
+                ps-2
+                pe-3
+                cfs-14
+              "
+            >
               <div
                 class="d-flex justify-content-between align-items-center my-2"
               >
@@ -1166,11 +1178,23 @@
           </div>
           <!--  -->
           <div class="bg-white rounded-3 bs-chart px-2 py-3 p-sm-3">
-            <div class="d-flex justify-content-between cfs-18 clh-28 fw-bold">
-              <span class="hr-body-text-color">Time Tracked</span>
+            <div
+              class="
+                d-flex
+                justify-content-between
+                cfs-18
+                clh-28
+                fw-bold
+                pb-4
+                border-bottom
+              "
+            >
+              <span class="hr-body-text-color clh-26 fw-bold cfs-14"
+                >Time Tracked</span
+              >
               <div class="dropdown">
                 <button
-                  class="btn btn-light dropdown-toggle"
+                  class="btn btn-light dropdown-toggle cfs-14"
                   type="button"
                   id="dateDropDown1"
                   data-bs-toggle="dropdown"
@@ -1184,8 +1208,13 @@
                 </ul>
               </div>
             </div>
+            <!-- label -->
+            <div class="d-flex flex-column align-items-center pt-3">
+              <span>Revenue</span>
+              <span class="cfs-18 fw-bold clh-24">USD 30,000.00</span>
+            </div>
             <!-- CHARTS -->
-            <!-- <div id="Analyticschart"></div> -->
+            <div id="AnalyticsBarchart"></div>
           </div>
         </div>
       </main>
@@ -1305,6 +1334,71 @@
       );
       chart.render();
       Analyticschart.render();
+    </script>
+    <script>
+      // bar chart
+      var options = {
+        series: [
+          {
+            data: [
+              4000, 3000, 5000, 3700, 1700, 2600, 1900, 4100, 3500, 2780, 3900,
+              1900, 2700, 2500, 3300, 3900,
+            ],
+          },
+        ],
+        chart: {
+          type: "bar",
+          height: 350,
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 4,
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        xaxis: {
+          categories: [
+            "Apr9",
+            "Apr10",
+            "Apr11",
+            "Apr12",
+            "Apr13",
+            "Apr14",
+            "Apr15",
+            "Apr16",
+            "Apr17",
+            "Apr18",
+            "Apr19",
+            "Apr20",
+            "Apr21",
+            "Apr22",
+            "Apr23",
+          ],
+        },
+        // responsive: [
+        //   {
+        //     breakpoint: 1000,
+        //     options: {
+        //       plotOptions: {
+        //         bar: {
+        //           horizontal: true,
+        //         },
+        //       },
+        //       legend: {
+        //         position: "bottom",
+        //       },
+        //     },
+        //   },
+        // ],
+      };
+
+      var chart = new ApexCharts(
+        document.querySelector("#AnalyticsBarchart"),
+        options
+      );
+      chart.render();
     </script>
   </body>
 </html>
