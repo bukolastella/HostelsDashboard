@@ -331,11 +331,6 @@ main {
     width: 100% !important;
   }
 }
-@media (max-width: 377px) {
-  .extendWidth {
-    // width: 100% !important;
-  }
-}
 @media (max-width: 430px) {
   main {
     padding-left: 2rem !important;
@@ -425,19 +420,9 @@ main {
 
 .sideLink {
   color: rgba(255, 255, 255, 0.6) !important;
-  margin-bottom: 2rem;
-  // &.active {
-  //   color: white !important;
-  // }
+  margin-bottom: 2.5rem;
   &:focus {
     color: white !important;
-  }
-  img {
-    // filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(253deg)
-    //   brightness(114%) contrast(100%);
-    // background-color: white;
-    // mask-image: url(../assests/Category.svg);
-    // mask-size: cover;
   }
   img {
     filter: brightness(0) invert(1);

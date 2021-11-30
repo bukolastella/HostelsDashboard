@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <!--css  -->
     <link href="./dist/main.css" rel="stylesheet" />
     <title>Agent Dashboard</title>
@@ -202,18 +206,18 @@
     </div>
     <div class="tab-content" id="v-pills-tabContent">
       <!-- First Page -- Main Dashboard-->
-      <main
+      <!-- <main
         class="tab-pane fade"
         id="v-pills-Listing"
         role="tabpanel"
         aria-labelledby="v-pills-Listing-tab"
-      >
-        <!-- <main
+      > -->
+        <main
         class="tab-pane fade show active"
         id="v-pills-home"
         role="tabpanel"
         aria-labelledby="v-pills-home-tab"
-      > -->
+      >
         <div
           class="
             d-flex
@@ -425,8 +429,7 @@
                   h-100
                   clh-26
                 "
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
+                
               >
                 <img
                   src="./assests/plusIcon.svg"
@@ -457,10 +460,11 @@
 
                 <input
                   type="text"
-                  class="form-control border-start-0 bg-transparent BorderColor"
+                  class="form-control border-start-0 bg-transparent BorderColor cfs-14"
                   placeholder="Search property by date"
                   aria-label="Search property by date"
                   aria-describedby="addon-wrapping"
+                  
                 />
               </div>
             </div>
@@ -471,114 +475,150 @@
         <!-- listing -->
         <div class="bg-white rounded-3 p-3 marginTop">
           <div class="table-responsive">
-            <table class="table align-middle hr-grey1 clh-28 fw-normal">
-              <thead class="hr-body-text-color cfs-18">
-                <tr>
-                  <th scope="col" class="fw-normal">Ref No</th>
-                  <th scope="col" class="fw-normal">Thumbnail</th>
-                  <th scope="col" class="fw-normal">Apartment type</th>
-                  <th scope="col" class="fw-normal">Location</th>
-                  <th scope="col" class="fw-normal">Campus</th>
-                  <th scope="col" class="fw-normal">Date Added</th>
-                  <th scope="col" class="fw-normal">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- 1 -->
-                <tr>
-                  <th scope="row" class="fw-normal">#48391</th>
-                  <td>
-                    <img
-                      src="./assests/Thumbnail.svg"
-                      alt="Thumbnail"
-                      class="img-fluid py-2"
-                    />
-                  </td>
-                  <td>2bedroom Flat</td>
-                  <td>Abeokuta</td>
-                  <td>OOU Campus</td>
-                  <td>April, 22, 2021</td>
-                  <td>
-                    <img
-                      src="./assests/Edit.svg"
-                      alt="Edit Icon"
-                      class="me-3"
-                    />
-                    <img src="./assests/Delete.svg" alt="Delete Icon" />
-                  </td>
-                </tr>
-                <!-- 2 -->
-                <tr>
-                  <th scope="row" class="fw-normal">#48391</th>
-                  <td><img src="./assests/Thumbnail.svg" alt="Thumbnail" /></td>
-                  <td>2bedroom Flat</td>
-                  <td>Abeokuta</td>
-                  <td>OOU Campus</td>
-                  <td>April, 22, 2021</td>
-                  <td>
-                    <img
-                      src="./assests/Edit.svg"
-                      alt="Edit Icon"
-                      class="me-3"
-                    />
-                    <img src="./assests/Delete.svg" alt="Delete Icon" />
-                  </td>
-                </tr>
-                <!-- 3 -->
-                <tr>
-                  <th scope="row" class="fw-normal">#48391</th>
-                  <td><img src="./assests/Thumbnail.svg" alt="Thumbnail" /></td>
-                  <td>2bedroom Flat</td>
-                  <td>Abeokuta</td>
-                  <td>OOU Campus</td>
-                  <td>April, 22, 2021</td>
-                  <td>
-                    <img
-                      src="./assests/Edit.svg"
-                      alt="Edit Icon"
-                      class="me-3"
-                    />
-                    <img src="./assests/Delete.svg" alt="Delete Icon" />
-                  </td>
-                </tr>
-                <!-- 4 -->
-                <tr>
-                  <th scope="row" class="fw-normal">#48391</th>
-                  <td><img src="./assests/Thumbnail.svg" alt="Thumbnail" /></td>
-                  <td>2bedroom Flat</td>
-                  <td>Abeokuta</td>
-                  <td>OOU Campus</td>
-                  <td>April, 22, 2021</td>
-                  <td>
-                    <img
-                      src="./assests/Edit.svg"
-                      alt="Edit Icon"
-                      class="me-3"
-                    />
-                    <img src="./assests/Delete.svg" alt="Delete Icon" />
-                  </td>
-                </tr>
-                <!-- 5 -->
-                <tr>
-                  <th scope="row" class="fw-normal">#48391</th>
-                  <td><img src="./assests/Thumbnail.svg" alt="Thumbnail" /></td>
-                  <td>2bedroom Flat</td>
-                  <td>Abeokuta</td>
-                  <td>OOU Campus</td>
-                  <td>April, 22, 2021</td>
-                  <td>
-                    <img
-                      src="./assests/Edit.svg"
-                      alt="Edit Icon"
-                      class="me-3"
-                    />
-                    <img src="./assests/Delete.svg" alt="Delete Icon" />
-                  </td>
-                </tr>
-                <!--  -->
-              </tbody>
-            </table>
-          </div>
+            <div class="table-responsive">
+              <table class="table align-middle hr-grey1 clh-28 fw-normal">
+                <thead class="hr-body-text-color cfs-18">
+                  <tr>
+                    <th scope="col" class="fw-normal">Ref No</th>
+                    <th scope="col" class="fw-normal d-none d-lg-table-cell">
+                      Thumbnail
+                    </th>
+                    <th scope="col" class="fw-normal">Apartment type</th>
+                    <th scope="col" class="fw-normal">Location</th>
+                    <th scope="col" class="fw-normal">Campus</th>
+                    <th scope="col" class="fw-normal">Date Added</th>
+                    <th scope="col" class="fw-normal">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- 1 -->
+                  <tr>
+                    <th scope="row" class="fw-normal">#48391</th>
+                    <td class="d-none d-lg-table-cell">
+                      <img
+                        src="./assests/Thumbnail.svg"
+                        alt="Thumbnail"
+                        class="img-fluid py-2"
+                      />
+                    </td>
+                    <td>2bedroom Flat</td>
+                    <td>Abeokuta</td>
+                    <td>OOU Campus</td>
+                    <td>April, 22, 2021</td>
+                    <td>
+                      <div
+                        class="d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="./assests/Edit.svg"
+                          alt="Edit Icon"
+                          class="me-3"
+                        />
+                       <img src="./assests/Delete.svg" alt="Delete Icon" role="button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal" />
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- 2 -->
+                  <tr>
+                    <th scope="row" class="fw-normal">#48391</th>
+                    <td class="d-none d-lg-table-cell">
+                      <img src="./assests/Thumbnail.svg" alt="Thumbnail" />
+                    </td>
+                    <td>2bedroom Flat</td>
+                    <td>Abeokuta</td>
+                    <td>OOU Campus</td>
+                    <td>April, 22, 2021</td>
+                    <td>
+                      <div
+                        class="d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="./assests/Edit.svg"
+                          alt="Edit Icon"
+                          class="me-3"
+                        />
+                       <img src="./assests/Delete.svg" alt="Delete Icon" role="button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal" />
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- 3 -->
+                  <tr>
+                    <th scope="row" class="fw-normal">#48391</th>
+                    <td class="d-none d-lg-table-cell">
+                      <img src="./assests/Thumbnail.svg" alt="Thumbnail" />
+                    </td>
+                    <td>2bedroom Flat</td>
+                    <td>Abeokuta</td>
+                    <td>OOU Campus</td>
+                    <td>April, 22, 2021</td>
+                    <td>
+                      <div
+                        class="d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="./assests/Edit.svg"
+                          alt="Edit Icon"
+                          class="me-3"
+                        />
+                       <img src="./assests/Delete.svg" alt="Delete Icon" role="button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal" />
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- 4 -->
+                  <tr>
+                    <th scope="row" class="fw-normal">#48391</th>
+                    <td class="d-none d-lg-table-cell">
+                      <img src="./assests/Thumbnail.svg" alt="Thumbnail" />
+                    </td>
+                    <td>2bedroom Flat</td>
+                    <td>Abeokuta</td>
+                    <td>OOU Campus</td>
+                    <td>April, 22, 2021</td>
+                    <td>
+                      <div
+                        class="d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="./assests/Edit.svg"
+                          alt="Edit Icon"
+                          class="me-3"
+                        />
+                       <img src="./assests/Delete.svg" alt="Delete Icon" role="button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal" />
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- 5 -->
+                  <tr>
+                    <th scope="row" class="fw-normal">#48391</th>
+                    <td class="d-none d-lg-table-cell">
+                      <img src="./assests/Thumbnail.svg" alt="Thumbnail" />
+                    </td>
+                    <td>2bedroom Flat</td>
+                    <td>Abeokuta</td>
+                    <td>OOU Campus</td>
+                    <td>April, 22, 2021</td>
+                    <td>
+                      <div
+                        class="d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="./assests/Edit.svg"
+                          alt="Edit Icon"
+                          class="me-3"
+                        />
+                       <img src="./assests/Delete.svg" alt="Delete Icon" role="button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal" />
+                      </div>
+                    </td>
+                  </tr>
+                  <!--  -->
+                </tbody>
+              </table>
+            </div>
         </div>
         <!-- end of table -->
       </main>
@@ -652,7 +692,7 @@
         role="tabpanel"
         aria-labelledby="v-pills-home-tab"
       > -->
-      <main
+        <main
         class="tab-pane fade"
         id="v-pills-Rented"
         role="tabpanel"
@@ -717,7 +757,9 @@
               <thead class="hr-body-text-color cfs-18">
                 <tr>
                   <th scope="col" class="fw-normal">Ref No</th>
-                  <th scope="col" class="fw-normal">Thumbnail</th>
+                  <th scope="col" class="fw-normal d-none d-lg-table-cell">
+                    Thumbnail
+                  </th>
                   <th scope="col" class="fw-normal">Apartment type</th>
                   <th scope="col" class="fw-normal">Location</th>
                   <th scope="col" class="fw-normal">Campus</th>
@@ -729,7 +771,7 @@
                 <!-- 1 -->
                 <tr>
                   <th scope="row" class="fw-normal">#48391</th>
-                  <td>
+                  <td class="d-none d-lg-table-cell">
                     <img
                       src="./assests/Thumbnail.svg"
                       alt="Thumbnail"
@@ -741,80 +783,113 @@
                   <td>OOU Campus</td>
                   <td>April, 22, 2021</td>
                   <td>
-                    <img
-                      src="./assests/Edit.svg"
-                      alt="Edit Icon"
-                      class="me-3"
-                    />
-                    <img src="./assests/Delete.svg" alt="Delete Icon" />
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <img
+                        src="./assests/Edit.svg"
+                        alt="Edit Icon"
+                        class="me-3"
+                      />
+                      <img src="./assests/Delete.svg" alt="Delete Icon" role="button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal" />
+                    </div>
                   </td>
                 </tr>
                 <!-- 2 -->
                 <tr>
                   <th scope="row" class="fw-normal">#48391</th>
-                  <td><img src="./assests/Thumbnail.svg" alt="Thumbnail" /></td>
+                  <td class="d-none d-lg-table-cell">
+                    <img src="./assests/Thumbnail.svg" alt="Thumbnail" />
+                  </td>
                   <td>2bedroom Flat</td>
                   <td>Abeokuta</td>
                   <td>OOU Campus</td>
                   <td>April, 22, 2021</td>
                   <td>
-                    <img
-                      src="./assests/Edit.svg"
-                      alt="Edit Icon"
-                      class="me-3"
-                    />
-                    <img src="./assests/Delete.svg" alt="Delete Icon" />
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <img
+                        src="./assests/Edit.svg"
+                        alt="Edit Icon"
+                        class="me-3"
+                      />
+                     <img src="./assests/Delete.svg" alt="Delete Icon" role="button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal" />
+                    </div>
                   </td>
                 </tr>
                 <!-- 3 -->
                 <tr>
                   <th scope="row" class="fw-normal">#48391</th>
-                  <td><img src="./assests/Thumbnail.svg" alt="Thumbnail" /></td>
+                  <td class="d-none d-lg-table-cell">
+                    <img src="./assests/Thumbnail.svg" alt="Thumbnail" />
+                  </td>
                   <td>2bedroom Flat</td>
                   <td>Abeokuta</td>
                   <td>OOU Campus</td>
                   <td>April, 22, 2021</td>
                   <td>
-                    <img
-                      src="./assests/Edit.svg"
-                      alt="Edit Icon"
-                      class="me-3"
-                    />
-                    <img src="./assests/Delete.svg" alt="Delete Icon" />
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <img
+                        src="./assests/Edit.svg"
+                        alt="Edit Icon"
+                        class="me-3"
+                      />
+                     <img src="./assests/Delete.svg" alt="Delete Icon" role="button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal" />
+                    </div>
                   </td>
                 </tr>
                 <!-- 4 -->
                 <tr>
                   <th scope="row" class="fw-normal">#48391</th>
-                  <td><img src="./assests/Thumbnail.svg" alt="Thumbnail" /></td>
+                  <td class="d-none d-lg-table-cell">
+                    <img src="./assests/Thumbnail.svg" alt="Thumbnail" />
+                  </td>
                   <td>2bedroom Flat</td>
                   <td>Abeokuta</td>
                   <td>OOU Campus</td>
                   <td>April, 22, 2021</td>
                   <td>
-                    <img
-                      src="./assests/Edit.svg"
-                      alt="Edit Icon"
-                      class="me-3"
-                    />
-                    <img src="./assests/Delete.svg" alt="Delete Icon" />
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <img
+                        src="./assests/Edit.svg"
+                        alt="Edit Icon"
+                        class="me-3"
+                      />
+                     <img src="./assests/Delete.svg" alt="Delete Icon" role="button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal" />
+                    </div>
                   </td>
                 </tr>
                 <!-- 5 -->
                 <tr>
                   <th scope="row" class="fw-normal">#48391</th>
-                  <td><img src="./assests/Thumbnail.svg" alt="Thumbnail" /></td>
+                  <td class="d-none d-lg-table-cell">
+                    <img src="./assests/Thumbnail.svg" alt="Thumbnail" />
+                  </td>
                   <td>2bedroom Flat</td>
                   <td>Abeokuta</td>
                   <td>OOU Campus</td>
                   <td>April, 22, 2021</td>
                   <td>
-                    <img
-                      src="./assests/Edit.svg"
-                      alt="Edit Icon"
-                      class="me-3"
-                    />
-                    <img src="./assests/Delete.svg" alt="Delete Icon" />
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <img
+                        src="./assests/Edit.svg"
+                        alt="Edit Icon"
+                        class="me-3"
+                      />
+                     <img src="./assests/Delete.svg" alt="Delete Icon" role="button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal" />
+                    </div>
                   </td>
                 </tr>
                 <!--  -->
@@ -1072,13 +1147,18 @@
         </div>
       </main>
       <!-- main -- Analytics section -->
-      <main
+      <!-- <main
         class="tab-pane fade show active"
         id="v-pills-home"
         role="tabpanel"
         aria-labelledby="v-pills-home-tab"
+      > -->
+      <main
+        class="tab-pane fade"
+        id="v-pills-Analytics"
+        role="tabpanel"
+        aria-labelledby="v-pills-Analytics-tab"
       >
-        <!-- <main class="tab-pane fade" id="v-pills-Analytics" role="tabpanel" aria-labelledby="v-pills-Analytics-tab"> -->
         <!--  -->
         <div class="CustomGrid">
           <div class="bg-white rounded-3 bs-chart px-2 py-3 p-sm-3">
@@ -1218,6 +1298,64 @@
           </div>
         </div>
       </main>
+      <!-- main -->
+      <main  class="tab-pane fade" id="v-pills-Profile" role="tabpanel" aria-labelledby="v-pills-Profile-tab">
+        <h3 class="hr-body-text-color cfs-18 clh-28 fw-bolder">Profile</h3>
+        <div class="border rounded-3 px-2 px-lg-5 py-4 bg-white">
+          <!-- top -->
+        <div class="container">
+          <div class="row">
+            <h4 class="col-lg-4 ProfileSubHeader fw-bolder">Profile Details</h4>
+            <div class="col-lg-8">
+              <div class="d-flex mb-4">
+                <img src="./assests/Profilethumbnail.svg" alt="Profile thumbnail">
+                <div class="align-self-center d-flex flex-column ms-3">
+                  <span class="ProfileSubHeader">Upload image <span class="hr-base">*</span></span>
+                  <span class="subSize hr-grey2">Image dimension must be 160 x 117px</span>
+                </div>
+              </div>
+              <form class=" needs-validation" novalidate>
+                  <label for="validationCustom01" class="form-label ProfileSubHeader">Full Name <span class="hr-base">*</span></label>
+                  <input type="text" class="form-control mb-4" id="validationCustom01" value="Jayson Emmanuel" placeholder="Enter Name" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <label for="validationCustom02" class="form-label ProfileSubHeader">Email Address<span class="hr-base">*</span></label>
+                  <input type="email" class="form-control" id="validationCustom02" value="jaysonpeters@gmail.com" placeholder="name@example.com" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>            
+                  <div class="d-flex align-items-sm-center flex-wrap flex-column flex-sm-row ">
+                    <button class="px-5 py-2 bg-green btn text-white fw-bolder my-4 me-sm-5 clh-26 " type="submit">Save</button>
+                    <button class="px-5 py-2 btn greenBorderColor fw-bolder  hr-green mb-4 mt-2 mt-sm-4 clh-26 " type="submit">Cancel</button>
+                  </div>
+              </form>
+            </div>
+          </div>
+          </div>
+          <!--bottom  -->
+          <div class="container mt-4">
+            <div class="row">
+            <h3 class="col-lg-4 hr-body-text-color ProfileSubHeader fw-bolder">Security</h3>
+              <form class="col-lg-8 needs-validation" novalidate>
+                  <label for="validationCustom01" class="form-label ProfileSubHeader">Current Password <span class="hr-base">*</span></label>
+                  <input type="password" class="form-control  mb-4" id="validationCustom01"placeholder="Enter existing password" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <!--  -->
+                  <input type="password" class="form-control" id="validationCustom02" placeholder="Enter new password" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>            
+                    <button class="px-5 py-2 bg-green btn text-white fw-bolder my-4 me-4 clh-26" type="submit">Change</button>
+              </form>
+          </div>
+        </div>
+          <!--  -->
+        </div>
+      </main>
+      <!--  -->
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

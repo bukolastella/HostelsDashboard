@@ -9,7 +9,10 @@ html {
 
 .sideLink {
   color: rgba(255, 255, 255, 0.6) !important;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  &:focus {
+    color: white !important;
+  }
   img {
     filter: brightness(0) invert(1);
   }
@@ -152,9 +155,7 @@ main {
 .marginTop {
   margin-top: 1rem;
   @media (max-width: 767px) {
-    .marginTop {
-      margin-top: 5rem;
-    }
+    margin-top: 5rem;
   }
 }
 //modal
@@ -432,6 +433,12 @@ main {
   }
 }
 
+// Profile section
+.ProfileSubHeader {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  color: #332600;
+}
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/utilities";

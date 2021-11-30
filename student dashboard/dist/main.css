@@ -514,7 +514,7 @@ main {
 
 .sideLink {
   color: rgba(255, 255, 255, 0.6) !important;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .sideLink:focus {
