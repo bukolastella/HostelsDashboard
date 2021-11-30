@@ -5,11 +5,15 @@ body {
 }
 html {
   font-size: 100% !important;
+  @media (max-width: 600px) {
+    font-size: 87.5% !important;
+  }
 }
 
 .sideLink {
   color: rgba(255, 255, 255, 0.6) !important;
   margin-bottom: 2.5rem;
+  font-size: 16px;
   &:focus {
     color: white !important;
   }
@@ -17,11 +21,7 @@ html {
     filter: brightness(0) invert(1);
   }
 }
-@media (max-width: 600px) {
-  html {
-    font-size: 87.5% !important;
-  }
-}
+
 .studentbox {
   display: grid;
   grid-template-columns: max-content 1fr;

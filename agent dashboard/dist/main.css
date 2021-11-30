@@ -8,9 +8,16 @@ html {
   font-size: 100% !important;
 }
 
+@media (max-width: 600px) {
+  html {
+    font-size: 87.5% !important;
+  }
+}
+
 .sideLink {
   color: rgba(255, 255, 255, 0.6) !important;
   margin-bottom: 2.5rem;
+  font-size: 16px;
 }
 
 .sideLink:focus {
@@ -20,12 +27,6 @@ html {
 .sideLink img {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
-}
-
-@media (max-width: 600px) {
-  html {
-    font-size: 87.5% !important;
-  }
 }
 
 .studentbox {
