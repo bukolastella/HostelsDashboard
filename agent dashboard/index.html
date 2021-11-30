@@ -1466,6 +1466,66 @@
       Analyticschart.render();
     </script>
     <script>
+      //Analyticsdonutchart
+            var options = {
+        series: [44, 55, 13],
+        labels: ["Apple", "Mango", "Orange"],
+        chart: {
+          width: "100%",
+          height: 300,
+          type: "donut",
+        },
+        plotOptions: {
+          pie: {
+            customScale: 0.8,
+            startAngle: 0,
+            endAngle: 270,
+            donut: {
+              size: "55%",
+              labels: {
+                show: true,
+              },
+            },
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        fill: {
+          type: "gradient",
+        },
+        // legend: {
+        //   formatter: function (val, opts) {
+        //     return val + " - " + opts.w.globals.series[opts.seriesIndex];
+        //   },
+        // },
+        // responsive: [
+        //   {
+        //     breakpoint: 480,
+        //     options: {
+        //       chart: {
+        //         width: 200,
+        //       },
+        //       legend: {
+        //         position: "bottom",
+        //       },
+        //     },
+        //   },
+        // ],
+      };
+
+      var chart = new ApexCharts(
+        document.querySelector("#donutchart"),
+        options
+      );
+      var Analyticschart = new ApexCharts(
+        document.querySelector("#Analyticsdonutchart"),
+        options
+      );
+      chart.render();
+      Analyticschart.render();
+    </script>
+    <script>
       // bar chart
       var options = {
         series: [

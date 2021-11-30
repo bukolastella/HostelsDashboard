@@ -963,140 +963,183 @@
   </main>
 
 
-  <!--main 4 Messages  -->
-  <main class="tab-pane fade AdjustDefaultMainPadding" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-xl-5">
-          <!--  -->
-          <div class="d-flex justify-content-between mb-3">
-            <h3 class="hr-body-text-color fw-bolder" style="font-size: 20px">Messages</h3>
-            <span class="hr-green" style="font-size: 14px">
-              <img src="./assests/messageIcon.svg" alt="Message Icon">
-              New Message
-            </span>
+  <!--main 4 Visitation  -->
+     
+  <main class="tab-pane fade  AdjustDefaultMainPadding" id="v-pills-visitation" role="tabpanel" aria-labelledby="v-pills-visitation-tab">
+      <!-- inner side bar-->
+      <div class="container">
+        <div class="row align-items-end" style="height: 46px">
+          <div class="col-6 col-md-6 col-xl-7 px-0 h-100 d-flex align-items-end mb-3">
+            <span class=" clh-26 hr-body-text-color fw-bolder px-2"
+              >List of Visited Hostels</span
+            >
           </div>
           <!--  -->
-          <div class="input-group bg-white">
-            <div class="input-group-text bg-transparent border-end-0 BorderColor ">
-              <img
-                src="./assests/longerSearchIconsvg.svg"
-                alt="Search icon"
-                class="h-80 w-80"
+          <div
+            class="
+              col-6 col-md-2
+              d-flex
+              justify-content-end
+              pe-2
+              align-items-center
+              h-100
+              mb-3
+            "
+          >
+            <button
+              class="
+                bg-green
+                border
+                rounded-3
+                py-1
+                px-3
+                me-0
+                text-white
+                d-flex
+                justify-content-end
+                align-items-center
+                h-100
+                clh-26
+              "
+              data-bs-toggle="modal" data-bs-target="#exampleModal"
+            >
+              <img src="./assests/Vector.svg" alt="vector icon" class="me-2" />
+              Filter</button
+            >
+          </div>
+          <div class="col-sm-12 h-100 col-md-4 col-xl-3 px-0 mb-3">
+            <div class="input-group flex-nowrap ms-0 h-xl-100 mt-2 mt-md-0 h-100 ">
+              <div class="input-group-text bg-transparent border-end-0 BorderColor">
+                <img
+                  src="./assests/Search.svg"
+                  alt="Search icon"
+                  class="h-80 w-80"
+                />
+              </div>
+
+              <input
+                type="text"
+                class="form-control border-start-0 bg-transparent BorderColor"
+                placeholder="Search for hostel"
+                aria-label="Search for hostel"
+                aria-describedby="addon-wrapping"
               />
             </div>
-
-            <input
-              type="text"
-              class="form-control border-start-0 bg-transparent BorderColor"
-              placeholder="Search or start a new message"
-              aria-label="Search or start a new message"
-              aria-describedby="addon-wrapping"
-            />
-          </div>
-          <!--  -->
-          <hr class="hr-grey1 mt-4 mb-4">
-          <!-- item 1 -->
-          <div class="GroupRow bg-white" >
-            <span class="GroupRowImg">
-              <img src='./assests/MessageProfilePicture1.svg' alt="group" />
-            </span>
-            <div class="GroupRowTitle fw-bolder">Adeleke Oluwakemi</div>
-            <span class="GroupRowTime" >4.50 PM</span>
-            <div class="GroupRowNo">
-              <span>
-                <img src="./assests/checkMark.svg" alt="Check Mark"> 
-              </span>
-              <span>
-                Will you be at the conference?
-              </span>
-            </div>
-          
-          </div>
-          <!-- item 2 -->
-          <div class="GroupRow bg-white" >
-            <span class="GroupRowImg">
-              <img src='./assests/MessageProfilePicture2.svg' alt="group" />
-            </span>
-            <div class="GroupRowTitle fw-bolder">Nifemi Ajayi</div>
-            <span class="GroupRowTime" >4.50 PM</span>
-            <div class="GroupRowNo">
-              <span>
-                <img src="./assests/checkMark.svg" alt="Check Mark"> 
-              </span>
-              <span>
-                I hope you are ready for the international conference
-              </span>
-            </div>
-           
-          </div>
-           <!-- item 3 -->
-           <div class="GroupRow bg-white" >
-            <span class="GroupRowImg">
-              <img src='./assests/MessageProfilePicture3.svg' alt="group" />
-            </span>
-            <div class="GroupRowTitle fw-bolder">Julia Orji</div>
-            <span class="GroupRowTime" >yesterday</span>
-            <div class="GroupRowNo">
-              <span>
-                <!-- <img src="./assests/checkMark.svg" alt="Check Mark">  -->
-              </span>
-              <span>
-                Desigining a mind blowing production worthy
-              </span>
-              <span class="GroupRowBubble">3</span>
-            </div>
-         
-          </div>
-           <!--item 4  -->
-           <div class="GroupRow bg-white" >
-            <span class="GroupRowImg">
-              <img src='./assests/MessageProfilePicture4.svg' alt="group" />
-            </span>
-            <div class="GroupRowTitle fw-bolder">Mosunmola Adenike</div>
-            <span class="GroupRowTime" >yesterday</span>
-            <div class="GroupRowNo">
-              <span>
-                <img src="./assests/checkMark.svg" alt="Check Mark"> 
-              </span>
-              <span>
-                I just went through your portfolio and it was fire
-              </span>
-            </div>
-          </div>
-           <!-- item 5 -->
-           <div class="GroupRow bg-white" >
-            <span class="GroupRowImg">
-              <img src='./assests/MessageProfilePicture5.svg' alt="group" />
-            </span>
-            <div class="GroupRowTitle fw-bolder">Abiodun Popoola</div>
-            <span class="GroupRowTime" >2d ago</span>
-            <div class="GroupRowNo">
-              <span>
-                <img src="./assests/checkMark.svg" alt="Check Mark"> 
-              </span>
-              <span>
-                Lorem ipsum dolor is not good enojhjk jjklk
-              </span>
-            </div>
-          </div>
-
-          <!--  -->
-        </div>
-        <!--  -->
-        <div class="border-start col-xl-1 ms-2" style="width: 1px"></div>
-        <!-- right hand section -->
-        <div class="col-xl-6 d-none d-xl-block p-3 ">
-          <div class="d-flex bg-white justify-content-center align-items-center flex-column border rounded-3 bs-soft h-100">
-            <h2 class="hr-body-text-color">Hostel Rentie</h2>
-            <span class="hr-grey2">Select a chat to start messaging</span>
           </div>
         </div>
       </div>
-        </div>
-  </main>
+      <!--  -->
+      <div class="bg-white rounded-3 p-3 marginTop">
+        <div class="table-responsive">
+            <table class="table align-middle hr-grey1 clh-28 fw-normal">
+              <thead class="hr-body-text-color cfs-18">
+                <tr>
+                  <th scope="col" class="fw-normal">Ref No</th>
+                  <th scope="col" class="fw-normal d-none d-lg-table-cell">
+                    Thumbnail
+                  </th>
+                  <th scope="col" class="fw-normal">Apartment type</th>
+                  <th scope="col" class="fw-normal">Location</th>
+                  <th scope="col" class="fw-normal">Campus</th>
+                  <th scope="col" class="fw-normal">Date Added</th>
+                  <th scope="col" class="fw-normal">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- 1 -->
+                <tr>
+                  <th scope="row" class="fw-normal">#48391</th>
+                  <td class="d-none d-lg-table-cell">
+                    <img
+                      src="./assests/Thumbnail.svg"
+                      alt="Thumbnail"
+                      class="img-fluid py-2"
+                    />
+                  </td>
+                  <td>2bedroom Flat</td>
+                  <td>Abeokuta</td>
+                  <td>OOU Campus</td>
+                  <td>April, 22, 2021</td>
+                  <td> 
+                    <div class="bg-green px-2 py-3 text-white rounded-2 clh-26 text-center">
+                    Rent Now
+                  </div>
+                   
+                  </td>
+                </tr>
+                <!-- 2 -->
+                <tr>
+                  <th scope="row" class="fw-normal">#48391</th>
+                  <td class="d-none d-lg-table-cell">
+                    <img src="./assests/Thumbnail.svg" alt="Thumbnail" />
+                  </td>
+                  <td>2bedroom Flat</td>
+                  <td>Abeokuta</td>
+                  <td>OOU Campus</td>
+                  <td>April, 22, 2021</td>
+                  <td>
+                    <div class="bg-green px-2 py-3 text-white rounded-2 clh-26 text-center">
+                      Rent Now
+                    </div>
+                  </td>
+                </tr>
+                <!-- 3 -->
+                <tr>
+                  <th scope="row" class="fw-normal">#48391</th>
+                  <td class="d-none d-lg-table-cell">
+                    <img src="./assests/Thumbnail.svg" alt="Thumbnail" />
+                  </td>
+                  <td>2bedroom Flat</td>
+                  <td>Abeokuta</td>
+                  <td>OOU Campus</td>
+                  <td>April, 22, 2021</td>
+                  <td>
+                    <div class="bg-green px-2 py-3 text-white rounded-2 clh-26 text-center">
+                      Rent Now
+                    </div>
+                  </td>
+                </tr>
+                <!-- 4 -->
+                <tr>
+                  <th scope="row" class="fw-normal">#48391</th>
+                  <td class="d-none d-lg-table-cell">
+                    <img src="./assests/Thumbnail.svg" alt="Thumbnail" />
+                  </td>
+                  <td>2bedroom Flat</td>
+                  <td>Abeokuta</td>
+                  <td>OOU Campus</td>
+                  <td>April, 22, 2021</td>
+                  <td>
+                    <div class="bg-green px-2 py-3 text-white rounded-2 clh-26 text-center">
+                      Rent Now
+                    </div>
+                  </td>
+                </tr>
+                <!-- 5 -->
+                <tr>
+                  <th scope="row" class="fw-normal">#48391</th>
+                  <td class="d-none d-lg-table-cell">
+                    <img src="./assests/Thumbnail.svg" alt="Thumbnail" />
+                  </td>
+                  <td>2bedroom Flat</td>
+                  <td>Abeokuta</td>
+                  <td>OOU Campus</td>
+                  <td>April, 22, 2021</td>
+                  <td>
+                    <div class="bg-green px-2 py-3 text-white rounded-2 clh-26 text-center">
+                      Rent Now
+                    </div>
+                  </td>
+                </tr>
+                <!--  -->
+              </tbody>
+            </table>
+            </div>
+          </div>     
+ <!--  -->
+  </main >
   <!-- Main 5  Messages chatting-->
-    <main class="tab-pane fade  AdjustDefaultMainPadding" id="v-pills-visitation" role="tabpanel" aria-labelledby="v-pills-visitation-tab">
+    <main class="tab-pane fade AdjustDefaultMainPadding" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" >
       <div class="container mt-4">
         <div class="row">
           <div class="col-xl-5">
@@ -1219,6 +1262,13 @@
   <div class="border-start col-xl-1 ms-2" style="width: 1px"></div>
           <!-- right hand section -->
           <div class="col-xl-6 d-none d-xl-block p-3 pt-0">
+
+            <!-- default when a message group has not been selected -->
+            <!-- <div class="d-flex bg-white justify-content-center align-items-center flex-column border rounded-3 bs-soft h-100">
+              <h2 class="hr-body-text-color">Hostel Rentie</h2>
+              <span class="hr-grey2">Select a chat to start messaging</span>
+            </div> -->
+
             <div class="h-100">
               <nav class="d-flex justify-content-between align-items-center">
                 <div class="fw-bolder">

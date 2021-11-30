@@ -429,7 +429,13 @@ main {
     filter: brightness(0) invert(1);
   }
 }
-
+//visitation
+.marginTop {
+  margin-top: 1rem;
+  @media (max-width: 767px) {
+    margin-top: 5rem;
+  }
+}
 //
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
