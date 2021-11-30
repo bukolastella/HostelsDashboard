@@ -1226,15 +1226,18 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script>
+      //Area chart
       var options = {
         series: [
           {
             name: "series1",
-            data: [500, 200, 280, 410, 420, 309, 290, 480, 243, 430, 110, 230],
+            data: [500, 200, 280, 410, 420, 309],
+            // 290, 480, 243, 430, 110, 230
           },
           {
             name: "series2",
-            data: [200, 120, 450, 320, 340, 520, 310, 230, 200, 130, 310, 450],
+            data: [200, 120, 450, 320, 340, 520],
+            //310, 230, 200, 130, 310, 450
           },
         ],
         chart: {
@@ -1251,20 +1254,8 @@
         },
         colors: ["rgba(79, 209, 197, 0.54)", "#2D3748", "#4FD1C5", "#E91E63"],
         xaxis: {
-          categories: [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec",
-          ],
+          categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+          //"Jul","Aug","Sep","Oct","Nov","Dec",
         },
       };
 
@@ -1277,6 +1268,7 @@
       Analyticschart.render();
     </script>
     <script>
+      //pie chart
       var options = {
         series: [44, 55, 13],
         labels: ["Apple", "Mango", "Orange"],
@@ -1340,10 +1332,8 @@
       var options = {
         series: [
           {
-            data: [
-              4000, 3000, 5000, 3700, 1700, 2600, 1900, 4100, 3500, 2780, 3900,
-              1900, 2700, 2500, 3300, 3900,
-            ],
+            data: [4000, 3000, 5000, 3700, 1700, 2600, 1900],
+            // 4100, 3500, 2780, 3900,1900, 2700, 2500, 3300, 3900,
           },
         ],
         chart: {
@@ -1367,15 +1357,8 @@
             "Apr13",
             "Apr14",
             "Apr15",
-            "Apr16",
-            "Apr17",
-            "Apr18",
-            "Apr19",
-            "Apr20",
-            "Apr21",
-            "Apr22",
-            "Apr23",
           ],
+          // "Apr16", "Apr17","Apr18","Apr19","Apr20","Apr21","Apr22","Apr23",
         },
         // responsive: [
         //   {
