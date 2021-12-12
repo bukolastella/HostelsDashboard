@@ -1,0 +1,258 @@
+body {
+  font-family: "Poppins", sans-serif !important;
+  letter-spacing: 0.02em;
+  // background-color: #e5e5e585 !important;
+}
+html {
+  font-size: 100% !important;
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 87.5% !important;
+  }
+}
+//   .mainBGColor {
+//     background-color: #fefefe;
+//   }
+.hero_bg {
+  background-image: url("../asset/syed-ahmad-kgjQ1AGDwE0-unsplash.jpg");
+  height: 65vh;
+}
+.hero_bg::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  background-image: linear-gradient(#9f9c9c00, black);
+  // @media (max-width: 992px) {
+  //   display: none;
+  // }
+}
+@media (max-width: 768px) {
+  .AdjustPosition {
+    // margin-top: 25vh;
+    top: 25vh;
+    left: 0;
+    background-color: #000;
+    padding: 20px 15px;
+    border-top: 1px solid #211f1f;
+    width: 100%;
+    height: fit-content;
+  }
+  .hero_bg {
+    height: 25vh;
+    background-size: cover;
+  }
+  .sectionHeight {
+    height: 85vh;
+  }
+}
+.setWidth {
+  padding: 0;
+  li {
+    list-style: none;
+    width: auto;
+    i {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      text-align: center;
+    }
+  }
+}
+
+.hostelBG {
+  background-image: url("../asset/kara-eads-L7EwHkq1B2s-unsplash.jpg");
+  background-size: cover;
+  height: 60%;
+}
+.BG-lightgreen {
+  background-color: #62a748 !important;
+}
+.P-text-color {
+  color: #808080;
+}
+.DETAILS > p {
+  line-height: 27px;
+  font-size: 0.9rem;
+  color: rgb(102, 102, 102);
+}
+.SHADE,
+.LIGHTSHADE {
+  position: relative;
+  display: inline-block;
+}
+.SHADE::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #62a748;
+  left: 2%;
+  top: 10%;
+  position: absolute;
+  z-index: -1;
+}
+.LIGHTSHADE::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #cccbcb91;
+  left: 5px;
+  top: 6px;
+  position: absolute;
+  z-index: -1;
+}
+//   .extendWidth {
+//     width: 75%;
+//     z-index: 1;
+//   }
+//   @media (max-width: 992px) {
+//     .extendWidth {
+//       width: 100%;
+//     }
+//     .changeBG {
+//       background-color: white;
+//     }
+//   }
+//   .CUSTOMROW > div {
+//     //   min-width: 350px;
+//   }
+//   .BG-green {
+//     background-color: #429523 !important;
+//   }
+
+//   .Header {
+//     color: #16320c;
+//   }
+//   .FS-14 {
+//     font-size: 14px;
+//   }
+//   .text-lightgreen {
+//     color: #62a748 !important;
+//   }
+//
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/utilities";
+$utilities: (
+  "text-color": (
+    property: color,
+    class: hr,
+    values: (
+      green: #429523,
+      header-text-color: #16320c,
+      body-text-color: #0d1e07,
+      light-green: #62a748,
+      dark-grey: #333333,
+      grey1: #808080,
+      grey2: #999999,
+      p-color: rgb(102, 102, 102),
+      empty-star: #cbcbcb,
+    ),
+  ),
+  "background": (
+    property: background-color,
+    class: bg,
+    values: (
+      green: #429523,
+      header-text-color: #16320c,
+      body-text-color: #0d1e07,
+      light-green: #62a748,
+      dark-grey: #333333,
+      grey1: #808080,
+      grey2: #999999,
+      grey3: rgb(251, 251, 251),
+      light-grey: #f5f5f5,
+      // light-grey: #ebebeb,
+    ),
+  ),
+  "font-size": (
+    property: font-size,
+    class: cfs,
+    values: (
+      18: 1.125rem,
+      15: 0.9375rem,
+      14: 0.875rem,
+    ),
+  ),
+);
+//
+//   $utilities: map-merge(
+//     $utilities,
+//     (
+//       "border":
+//         map-merge(
+//           map-get($utilities, "border"),
+//           (
+//             responsive: true,
+//           )
+//         ),
+//       "border-top":
+//         map-merge(
+//           map-get($utilities, "border-top"),
+//           (
+//             responsive: true,
+//           )
+//         ),
+//       "border-end":
+//         map-merge(
+//           map-get($utilities, "border-end"),
+//           (
+//             responsive: true,
+//           )
+//         ),
+//       "border-bottom":
+//         map-merge(
+//           map-get($utilities, "border-bottom"),
+//           (
+//             responsive: true,
+//           )
+//         ),
+//       "border-start":
+//         map-merge(
+//           map-get($utilities, "border-start"),
+//           (
+//             responsive: true,
+//           )
+//         ),
+//       //
+//       "rounded":
+//         map-merge(
+//           map-get($utilities, "rounded"),
+//           (
+//             responsive: true,
+//           )
+//         ),
+//       "rounded-top":
+//         map-merge(
+//           map-get($utilities, "rounded-top"),
+//           (
+//             responsive: true,
+//           )
+//         ),
+//       "rounded-end":
+//         map-merge(
+//           map-get($utilities, "rounded-end"),
+//           (
+//             responsive: true,
+//           )
+//         ),
+//       "rounded-bottom":
+//         map-merge(
+//           map-get($utilities, "rounded-bottom"),
+//           (
+//             responsive: true,
+//           )
+//         ),
+//       "rounded-start":
+//         map-merge(
+//           map-get($utilities, "rounded-start"),
+//           (
+//             responsive: true,
+//           )
+//         ),
+//     )
+//   );
+//
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
