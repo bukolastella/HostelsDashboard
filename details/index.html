@@ -70,21 +70,44 @@
     <div
       class="px-5 py-4 fw-bold text-muted bg-light-grey h-auto border-bottom cfs-15"
     >
-      <span class="me-4 border-bottom border-dark pb-4" role="button"
-        >Overview</span
+      <a
+        class="me-4 border-bottom border-dark pb-4 cbc-light-green border-2 text-decoration-none text-muted"
+        role="button"
+        href="#overview"
+        >Overview</a
       >
-      <span class="me-4 pb-4" role="button">Gallery</span>
-      <span class="me-4 pb-4" role="button">Pricing</span>
-      <span class="me-4 pb-4" role="button">Review</span>
-      <span class="me-4 pb-4" role="button">Add Review</span>
+      <a
+        class="me-4 pb-4 text-decoration-none text-muted"
+        role="button"
+        href="#gallery"
+        >Gallery</a
+      >
+      <a
+        class="me-4 pb-4 text-decoration-none text-muted"
+        role="button"
+        href="#pricing"
+        >Pricing</a
+      >
+      <a
+        class="me-4 pb-4 text-decoration-none text-muted"
+        role="button"
+        href="#review"
+        >Review</a
+      >
+      <a
+        class="me-4 pb-4 text-decoration-none text-muted"
+        role="button"
+        href="#add-review"
+        >Add Review</a
+      >
     </div>
     <!-- end of hero -->
-    <main class="mt-5 px-5">
+    <main class="mt-4 px-5">
       <div class="row">
         <div class="col-sm-12 col-lg-8">
           <div class="px-2">
             <!-- details-->
-            <section class="DETAILS">
+            <section class="DETAILS pt-3" id="overview">
               <h4 class="fw-bold mb-3">Details</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -214,7 +237,7 @@
               </ul>
             </section>
             <!-- Gallery -->
-            <section class="mt-4">
+            <section class="mt-4 pt-3" id="gallery">
               <h4 class="fw-bold mb-4">Gallery</h4>
               <div class="d-flex justify-content-between">
                 <div class="me-4">
@@ -233,7 +256,7 @@
               </div>
             </section>
             <!-- Pricing -->
-            <section class="mt-5">
+            <section class="mt-4 pt-3" id="pricing">
               <h4 class="fw-bold mb-4">Pricing</h4>
               <ul class="px-0">
                 <li
@@ -264,7 +287,7 @@
               </ul>
             </section>
             <!--Review  -->
-            <section class="mt-5">
+            <section class="mt-4 pt-3" id="review">
               <h4 class="fw-bold mb-4">Review</h4>
               <div class="bg-light-grey p-4 LIGHTSHADE">
                 <span class="text-warning">
@@ -417,7 +440,7 @@
               </div>
               <!-- <a href="#" class="btn bg-green text-white fw-bold my-3 w-100 py-3 rounded-0 SHADE">Book Now</a> -->
             </section>
-            <!--  -->
+            <!-- cooments -->
 
             <section class="mt-4 border p-4 d-flex justify-content-between">
               <div class="row">
@@ -460,8 +483,9 @@
                 </div>
               </div>
             </section>
-            <!--  -->
-            <section class="mt-5 bg-light-grey p-4">
+            <!-- Add a Review -->
+
+            <section class="mt-5 bg-light-grey p-4" id="add-review">
               <h4 class="fw-bold mb-3">Add a Review</h4>
               <span class="cfs-15 hr-p-color"
                 >Your email address will not be published. Required fields are
@@ -576,7 +600,7 @@
                 </button>
               </form>
             </section>
-            <!--  -->
+            <!--Others-->
             <section class="mt-5 pb-5">
               <h4 class="fw-bold mb-2">Other Nearby Services</h4>
               <div class="row">

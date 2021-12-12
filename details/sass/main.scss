@@ -176,6 +176,13 @@ $utilities: (
       14: 0.875rem,
     ),
   ),
+  "border-color": (
+    property: border-color,
+    class: cbc,
+    values: (
+      light-green: #62a748,
+    ),
+  ),
 );
 //
 //   $utilities: map-merge(

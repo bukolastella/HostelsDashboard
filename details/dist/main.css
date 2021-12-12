@@ -7970,40 +7970,8 @@ fieldset:disabled .btn {
   border-left: 0 !important;
 }
 
-.border-primary {
-  border-color: #0d6efd !important;
-}
-
-.border-secondary {
-  border-color: #6c757d !important;
-}
-
-.border-success {
-  border-color: #198754 !important;
-}
-
-.border-info {
-  border-color: #0dcaf0 !important;
-}
-
-.border-warning {
-  border-color: #ffc107 !important;
-}
-
-.border-danger {
-  border-color: #dc3545 !important;
-}
-
-.border-light {
-  border-color: #f8f9fa !important;
-}
-
-.border-dark {
-  border-color: #212529 !important;
-}
-
-.border-white {
-  border-color: #fff !important;
+.cbc-light-green {
+  border-color: #62a748 !important;
 }
 
 .border-1 {
