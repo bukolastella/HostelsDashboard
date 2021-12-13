@@ -16,6 +16,8 @@ html {
 .hero_bg {
   background-image: url("../asset/syed-ahmad-kgjQ1AGDwE0-unsplash.jpg");
   height: 65vh;
+  position: relative;
+  z-index: -2;
 }
 
 .hero_bg::before {
@@ -26,12 +28,11 @@ html {
   position: absolute;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9f9c9c00), to(black));
   background-image: linear-gradient(#9f9c9c00, black);
+  z-index: -1;
 }
 
 @media (max-width: 768px) {
   .AdjustPosition {
-    top: 25vh;
-    left: 0;
     background-color: #000;
     padding: 20px 15px;
     border-top: 1px solid #211f1f;
@@ -43,9 +44,6 @@ html {
   .hero_bg {
     height: 25vh;
     background-size: cover;
-  }
-  .sectionHeight {
-    height: 85vh;
   }
 }
 
