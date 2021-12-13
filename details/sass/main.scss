@@ -60,7 +60,7 @@ html {
     padding-right: 5rem;
     padding-left: 5rem;
   }
-  @media (max-width: 576px) {
+  @media (max-width: 700px) {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
@@ -189,7 +189,7 @@ $utilities: (
   //         10: 10rem,
   //       )
   //     ),
-  // ),,,,,,,,,,,,,,
+  // ),,,,,,,,,,,,,,,,
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

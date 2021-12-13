@@ -78,7 +78,7 @@ html {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 700px) {
   .CUSTOMPADDING {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
