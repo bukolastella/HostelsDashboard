@@ -54,6 +54,16 @@ html {
   }
 }
 
+.setActiveBorder {
+  border-bottom: 2px solid #62a748;
+}
+
+@media (max-width: 576px) {
+  .setActiveBorder {
+    border-bottom: none;
+  }
+}
+
 @media (min-width: 768px) {
   .CUSTOMPADDING {
     padding-right: 3rem;

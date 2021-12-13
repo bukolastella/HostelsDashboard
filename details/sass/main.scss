@@ -44,6 +44,13 @@ html {
     background-size: cover;
   }
 }
+
+.setActiveBorder {
+  border-bottom: 2px solid #62a748;
+  @media (max-width: 576px) {
+    border-bottom: none;
+  }
+}
 .CUSTOMPADDING {
   @media (min-width: 768px) {
     padding-right: 3rem;
@@ -176,7 +183,7 @@ $utilities: (
   //         10: 10rem,
   //       )
   //     ),
-  // ),,,,,
+  // ),,,,,,
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
