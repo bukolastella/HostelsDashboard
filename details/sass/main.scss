@@ -25,7 +25,12 @@ html {
   background-image: linear-gradient(#9f9c9c00, black);
   z-index: -1;
 }
-
+@media (max-width: 992px) and (min-width: 768px) {
+  .CUSTOMPADDING {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+}
 @media (max-width: 768px) {
   .AdjustPosition {
     background-color: #000;
@@ -38,8 +43,19 @@ html {
     height: 25vh;
     background-size: cover;
   }
-  .sectionHeight {
-    // height: 85vh;
+}
+.CUSTOMPADDING {
+  @media (min-width: 768px) {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  @media (max-width: 768px) {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+  @media (max-width: 576px) {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
 }
 .setWidth {
@@ -97,35 +113,7 @@ html {
   position: absolute;
   z-index: -1;
 }
-//   .extendWidth {
-//     width: 75%;
-//     z-index: 1;
-//   }
-//   @media (max-width: 992px) {
-//     .extendWidth {
-//       width: 100%;
-//     }
-//     .changeBG {
-//       background-color: white;
-//     }
-//   }
-//   .CUSTOMROW > div {
-//     //   min-width: 350px;
-//   }
-//   .BG-green {
-//     background-color: #429523 !important;
-//   }
 
-//   .Header {
-//     color: #16320c;
-//   }
-//   .FS-14 {
-//     font-size: 14px;
-//   }
-//   .text-lightgreen {
-//     color: #62a748 !important;
-//   }
-//
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/utilities";
@@ -177,83 +165,18 @@ $utilities: (
       light-green: #62a748,
     ),
   ),
+  // "padding-x": (
+  //   property: padding-right padding-left,
+  //   responsive: true,
+  //   class: cpd,
+  //   values:
+  //     map-merge(
+  //       $spacers,
+  //       (
+  //         10: 10rem,
+  //       )
+  //     ),
+  // ),,,,,
 );
-//
-//   $utilities: map-merge(
-//     $utilities,
-//     (
-//       "border":
-//         map-merge(
-//           map-get($utilities, "border"),
-//           (
-//             responsive: true,
-//           )
-//         ),
-//       "border-top":
-//         map-merge(
-//           map-get($utilities, "border-top"),
-//           (
-//             responsive: true,
-//           )
-//         ),
-//       "border-end":
-//         map-merge(
-//           map-get($utilities, "border-end"),
-//           (
-//             responsive: true,
-//           )
-//         ),
-//       "border-bottom":
-//         map-merge(
-//           map-get($utilities, "border-bottom"),
-//           (
-//             responsive: true,
-//           )
-//         ),
-//       "border-start":
-//         map-merge(
-//           map-get($utilities, "border-start"),
-//           (
-//             responsive: true,
-//           )
-//         ),
-//       //
-//       "rounded":
-//         map-merge(
-//           map-get($utilities, "rounded"),
-//           (
-//             responsive: true,
-//           )
-//         ),
-//       "rounded-top":
-//         map-merge(
-//           map-get($utilities, "rounded-top"),
-//           (
-//             responsive: true,
-//           )
-//         ),
-//       "rounded-end":
-//         map-merge(
-//           map-get($utilities, "rounded-end"),
-//           (
-//             responsive: true,
-//           )
-//         ),
-//       "rounded-bottom":
-//         map-merge(
-//           map-get($utilities, "rounded-bottom"),
-//           (
-//             responsive: true,
-//           )
-//         ),
-//       "rounded-start":
-//         map-merge(
-//           map-get($utilities, "rounded-start"),
-//           (
-//             responsive: true,
-//           )
-//         ),
-//     )
-//   );
-//
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

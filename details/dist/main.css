@@ -31,6 +31,13 @@ html {
   z-index: -1;
 }
 
+@media (max-width: 992px) and (min-width: 768px) {
+  .CUSTOMPADDING {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+}
+
 @media (max-width: 768px) {
   .AdjustPosition {
     background-color: #000;
@@ -44,6 +51,27 @@ html {
   .hero_bg {
     height: 25vh;
     background-size: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .CUSTOMPADDING {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .CUSTOMPADDING {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .CUSTOMPADDING {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
 }
 
