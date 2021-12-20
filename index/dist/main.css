@@ -14,58 +14,8 @@ html {
   }
 }
 
-.mainBGColor {
-  background-color: #fefefe;
-}
-
-.hero_bg {
-  background-image: url("../asset/deborah-cortelazzi-gREquCUXQLI-unsplash.jpg");
-  background-size: cover;
-  overflow-x: hidden;
-}
-
-.hero_bg::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  left: 40%;
-  position: absolute;
-  background-image: -webkit-gradient(linear, right top, left top, color-stop(20%, rgba(255, 255, 255, 0.99)), color-stop(70%, rgba(255, 255, 255, 0.5)), color-stop(95%, rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.99) 20%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0) 95%);
-}
-
-@media (max-width: 992px) {
-  .hero_bg::before {
-    display: none;
-  }
-}
-
 .items-border {
   border: 2px solid #429523;
-}
-
-.BG-green {
-  background-color: #429523 !important;
-}
-
-.BG-lightgreen {
-  background-color: #62a748 !important;
-}
-
-.P-text-color {
-  color: #808080;
-}
-
-.Header {
-  color: #16320c;
-}
-
-.FS-14 {
-  font-size: 14px;
-}
-
-.text-lightgreen {
-  color: #62a748 !important;
 }
 
 /*!
@@ -8710,28 +8660,8 @@ fieldset:disabled .btn {
   font-family: var(--bs-font-monospace) !important;
 }
 
-.fs-1 {
-  font-size: calc(1.375rem + 1.5vw) !important;
-}
-
-.fs-2 {
-  font-size: calc(1.325rem + 0.9vw) !important;
-}
-
-.fs-3 {
-  font-size: calc(1.3rem + 0.6vw) !important;
-}
-
-.fs-4 {
-  font-size: calc(1.275rem + 0.3vw) !important;
-}
-
-.fs-5 {
-  font-size: 1.25rem !important;
-}
-
-.fs-6 {
-  font-size: 1rem !important;
+.cfs-18 {
+  font-size: 1.125rem !important;
 }
 
 .fst-italic {
@@ -8762,8 +8692,20 @@ fieldset:disabled .btn {
   font-weight: bolder !important;
 }
 
-.clh-26 {
-  line-height: 1.625rem !important;
+.lh-1 {
+  line-height: 1 !important;
+}
+
+.lh-sm {
+  line-height: 1.25 !important;
+}
+
+.lh-base {
+  line-height: 1.5 !important;
+}
+
+.lh-lg {
+  line-height: 2 !important;
 }
 
 .text-start {
@@ -9077,32 +9019,8 @@ fieldset:disabled .btn {
   visibility: hidden !important;
 }
 
-.hr-base {
-  color: #f44336 !important;
-}
-
 .hr-green {
   color: #429523 !important;
-}
-
-.hr-off-white {
-  color: #fbfbfb !important;
-}
-
-.hr-blue {
-  color: #f3f8ff !important;
-}
-
-.hr-header-text-color {
-  color: #16320c !important;
-}
-
-.hr-body-text-color {
-  color: #0d1e07 !important;
-}
-
-.hr-light-green {
-  color: #62a748 !important;
 }
 
 .hr-dark-grey {
@@ -9115,72 +9033,6 @@ fieldset:disabled .btn {
 
 .hr-grey2 {
   color: #999999 !important;
-}
-
-.hr-bg-white {
-  color: #f8f9fa !important;
-}
-
-.hr-stroke {
-  color: rgba(189, 189, 189, 0.4) !important;
-}
-
-.bg-base {
-  background-color: #f44336 !important;
-}
-
-.bg-green {
-  background-color: #429523 !important;
-}
-
-.bg-off-white {
-  background-color: #fbfbfb !important;
-}
-
-.bg-blue {
-  background-color: #f3f8ff !important;
-}
-
-.bg-header-text-color {
-  background-color: #16320c !important;
-}
-
-.bg-body-text-color {
-  background-color: #0d1e07 !important;
-}
-
-.bg-light-green {
-  background-color: #62a748 !important;
-}
-
-.bg-dark-grey {
-  background-color: #333333 !important;
-}
-
-.bg-grey1 {
-  background-color: #808080 !important;
-}
-
-.bg-grey2 {
-  background-color: #999999 !important;
-}
-
-.bg-bg-white {
-  background-color: #f8f9fa !important;
-}
-
-.bg-stroke {
-  background-color: rgba(189, 189, 189, 0.4) !important;
-}
-
-.bs-soft {
-  -webkit-box-shadow: 0px 4px 8px rgba(128, 128, 128, 0.15) !important;
-          box-shadow: 0px 4px 8px rgba(128, 128, 128, 0.15) !important;
-}
-
-.bs-hover {
-  -webkit-box-shadow: 0px 16px 24px rgba(128, 128, 128, 0.2) !important;
-          box-shadow: 0px 16px 24px rgba(128, 128, 128, 0.2) !important;
 }
 
 @media (min-width: 576px) {
@@ -12065,21 +11917,6 @@ fieldset:disabled .btn {
   }
   .text-xxl-center {
     text-align: center !important;
-  }
-}
-
-@media (min-width: 1200px) {
-  .fs-1 {
-    font-size: 2.5rem !important;
-  }
-  .fs-2 {
-    font-size: 2rem !important;
-  }
-  .fs-3 {
-    font-size: 1.75rem !important;
-  }
-  .fs-4 {
-    font-size: 1.5rem !important;
   }
 }
 
