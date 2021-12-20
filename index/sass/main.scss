@@ -1,0 +1,122 @@
+body {
+  font-family: "Poppins", sans-serif !important;
+  letter-spacing: 0.02em;
+  background-color: #e5e5e585 !important;
+  // background: #e5e5e5 !important;
+}
+html {
+  font-size: 100% !important;
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 87.5% !important;
+  }
+}
+.mainBGColor {
+  background-color: #fefefe;
+}
+.hero_bg {
+  background-image: url("../asset/deborah-cortelazzi-gREquCUXQLI-unsplash.jpg");
+  background-size: cover;
+  overflow-x: hidden;
+}
+.hero_bg::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 40%;
+  position: absolute;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.99) 20%,
+    rgba(255, 255, 255, 0.5) 70%,
+    rgba(255, 255, 255, 0) 95%
+  );
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.items-border {
+  border: 2px solid #429523;
+}
+
+.BG-green {
+  background-color: #429523 !important;
+}
+.BG-lightgreen {
+  background-color: #62a748 !important;
+}
+.P-text-color {
+  color: #808080;
+}
+.Header {
+  color: #16320c;
+}
+.FS-14 {
+  font-size: 14px;
+}
+.text-lightgreen {
+  color: #62a748 !important;
+}
+
+//
+//
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/utilities";
+
+$utilities: (
+  "text-color": (
+    property: color,
+    class: hr,
+    values: (
+      base: #f44336,
+      green: #429523,
+      off-white: #fbfbfb,
+      blue: #f3f8ff,
+      header-text-color: #16320c,
+      body-text-color: #0d1e07,
+      light-green: #62a748,
+      dark-grey: #333333,
+      grey1: #808080,
+      grey2: #999999,
+      bg-white: #f8f9fa,
+      stroke: rgba(189, 189, 189, 0.4),
+    ),
+  ),
+  "background": (
+    property: background-color,
+    class: bg,
+    values: (
+      base: #f44336,
+      green: #429523,
+      off-white: #fbfbfb,
+      blue: #f3f8ff,
+      header-text-color: #16320c,
+      body-text-color: #0d1e07,
+      light-green: #62a748,
+      dark-grey: #333333,
+      grey1: #808080,
+      grey2: #999999,
+      bg-white: #f8f9fa,
+      stroke: rgba(189, 189, 189, 0.4),
+    ),
+  ),
+  "box-shadow": (
+    property: box-shadow,
+    class: bs,
+    values: (
+      soft: 0px 4px 8px rgba(128, 128, 128, 0.15),
+      hover: 0px 16px 24px rgba(128, 128, 128, 0.2),
+    ),
+  ),
+  "line-height": (
+    property: line-height,
+    class: clh,
+    values: (
+      26: 1.625rem,
+    ),
+  ),
+);
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
