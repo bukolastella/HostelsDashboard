@@ -25,12 +25,12 @@ html {
   background-image: linear-gradient(#9f9c9c00, black);
   z-index: -1;
 }
-@media (max-width: 992px) and (min-width: 768px) {
-  .CUSTOMPADDING {
-    padding-left: 5rem !important;
-    padding-right: 5rem !important;
-  }
-}
+// @media (max-width: 992px) and (min-width: 768px) {
+//   .CUSTOMPADDING {
+//     padding-left: 3.5rem !important;
+//     padding-right: 3.5rem !important;
+//   }
+// }
 @media (min-width: 1224px) {
   .AdjustPosition {
     padding: 0 3rem;
@@ -200,7 +200,7 @@ $utilities: (
   //         10: 10rem,
   //       )
   //     ),
-  // ),,,,,,,,,,,,,,,,,,,,,,,,,,,
+  // ),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
