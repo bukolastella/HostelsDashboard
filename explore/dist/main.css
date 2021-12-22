@@ -14,9 +14,11 @@ html {
   }
 }
 
-.mainBGColor {
-  max-width: 1224px;
-  margin: 0 auto;
+@media (max-width: 1224px) {
+  .mainBGColor {
+    max-width: 1224px;
+    margin: 0 auto;
+  }
 }
 
 .hero_bg {
