@@ -14,7 +14,7 @@ html {
   }
 }
 
-@media (max-width: 1224px) {
+@media (min-width: 1224px) {
   .mainBGColor {
     max-width: 1224px;
     margin: 0 auto;

@@ -14,7 +14,7 @@ html {
 }
 .mainBGColor {
   // background-color: #fefefe;
-  @media (max-width: 1224px) {
+  @media (min-width: 1224px) {
     max-width: 1224px;
     margin: 0 auto;
   }
