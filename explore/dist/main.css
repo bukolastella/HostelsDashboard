@@ -15,7 +15,8 @@ html {
 }
 
 .mainBGColor {
-  background-color: #fefefe;
+  max-width: 1224px;
+  margin: 0 auto;
 }
 
 .hero_bg {

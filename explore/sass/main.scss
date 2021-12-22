@@ -13,7 +13,9 @@ html {
   }
 }
 .mainBGColor {
-  background-color: #fefefe;
+  // background-color: #fefefe;
+  max-width: 1224px;
+  margin: 0 auto;
 }
 .hero_bg {
   background-image: url("../asset/deborah-cortelazzi-gREquCUXQLI-unsplash.jpg");
@@ -54,9 +56,16 @@ html {
     background-color: white;
   }
 }
-.CUSTOMROW > div {
-  //   min-width: 350px;
-}
+// .CUSTOMROW {
+//   max-width: 1224px;
+//   margin: 0 auto;
+//   @media (max-width: 768px) {
+//     margin-top: 3rem;
+//   }
+// }
+// .CUSTOMROW > div {
+//     min-width: 350px;
+// }
 .BG-green {
   background-color: #429523 !important;
 }
