@@ -5,9 +5,208 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./dist/main.css" rel="stylesheet" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--  -->
     <title>Explore Page</title>
   </head>
   <body>
+    <!--  -->
+    <header class="wrapper mb-1">
+      <nav
+        class="navbar navbar-expand-lg center-nav transparent navbar-light caret-none"
+      >
+        <div class="container flex-lg-row flex-nowrap align-items-center">
+          <div class="navbar-brand w-100">
+            <a href="https://hostelrentie.com/">
+              <img
+                src="https://hostelrentie.com/assets/img/logo-dark.png"
+                srcset="https://hostelrentie.com/assets/img/logo-dark@2x.png 2x"
+                alt=""
+              />
+            </a>
+          </div>
+          <div
+            class="offcanvas offcanvas-start"
+            id="offcanvasNavbar"
+            style="padding: 0 2rem"
+          >
+            <div class="offcanvas-header d-lg-none d-xl-none">
+              <a href="./index.html"
+                ><img
+                  src="https://hostelrentie.com/assets/img/logo-light.png"
+                  srcset="
+                    https://hostelrentie.com/assets/img/logo-light@2x.png 2x
+                  "
+                  alt=""
+              /></a>
+              <button
+                type="button"
+                class="btn-close btn-close-white offcanvas-close offcanvas-nav-close"
+                aria-label="Close"
+              ></button>
+            </div>
+            <ul
+              class="navbar-nav sm-collapsible"
+              data-smartmenus-id="1642438460818675"
+            >
+              <li class="nav-item">
+                <a class="navItems_links" href="https://hostelrentie.com/about"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="navItems_links"
+                  href="https://hostelrentie.com/explore"
+                  >Explore</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="navItems_links"
+                  href="https://hostelrentie.com/wishlist"
+                >
+                  Wishlist</a
+                >
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="hostels.html">Hostels</a>
+              </li> -->
+              <li class="nav-item d-block d-lg-none mb-3">
+                <a
+                  class="nav-link btn rounded_post btn-outline-primary px-5"
+                  style="color: #429523"
+                  href="https://hostelrentie.com/upload-hostel"
+                  >Post</a
+                >
+              </li>
+
+              <li class="nav-item d-block d-lg-none dropdown">
+                <a
+                  class="nav-link btn btn-primary ps-5 pe-8 has-submenu set_border_color"
+                  style="color: #fff"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#"
+                  aria-haspopup="true"
+                  aria-controls="sm-1642438460818675-1"
+                >
+                  Account &nbsp;
+                  <i class="fas fa-caret-down"></i>
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuLink"
+                  id="sm-1642438460818675-1"
+                  role="group"
+                  aria-hidden="true"
+                  aria-expanded="false"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      style="color: black"
+                      href="https://hostelrentie.com/signup"
+                    >
+                      <i class="fa-solid fa-user-plus"></i> Create Account
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      style="color: black"
+                      href="https://hostelrentie.com/signin"
+                    >
+                      <i class="fa-solid fa-user"></i> Sign In
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- /.navbar-nav -->
+          </div>
+          <!-- /.navbar-collapse -->
+          <div class="navbar-other w-100 d-flex ms-auto">
+            <ul
+              class="navbar-nav flex-row align-items-center ms-auto"
+              data-sm-skip="true"
+            >
+              <li class="nav-item d-none d-md-block me-2">
+                <p style="font-size: small; color: rgb(96, 105, 123)">
+                  You can call us to book your hostel<br />
+                  <span style="color: #429523"
+                    ><strong>+234-813-6490-32</strong></span
+                  >
+                </p>
+              </li>
+              <li class="nav-item d-none d-md-block me-2">
+                <a
+                  href="https://hostelrentie.com/upload-hostel"
+                  class="btn btn-sm rounded_post fw-bolder border-2"
+                  >Post</a
+                >
+              </li>
+
+              <li class="nav-item d-none d-md-block dropdown fw-bolder">
+                <a
+                  href="#"
+                  class="btn btn-sm set_border_color text-white ms-3 d-flex align-items-center"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-user me-2"></i> Account
+                  <i class="fas fa-caret-down ms-2"></i
+                ></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://hostelrentie.com/signup"
+                    >
+                      <i class="fa-solid fa-user-plus"></i> Create Account
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://hostelrentie.com/signin"
+                    >
+                      <i class="fa-solid fa-user"></i> Sign In
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item d-md-none">
+                <div class="navbar-hamburger">
+                  <button
+                    class="hamburger animate plain"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                  >
+                    <span></span>
+                  </button>
+                </div>
+              </li>
+            </ul>
+            <!-- /.navbar-nav -->
+          </div>
+          <!-- /.navbar-other -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- /.navbar -->
+    </header>
     <!-- hero section -->
     <div
       class="position-relative vh-100 hero_bg px-3 px-md-5 text-white fw-bold"
@@ -480,7 +679,6 @@
       </section>
       <!--  -->
     </main>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

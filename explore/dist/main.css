@@ -14,6 +14,113 @@ html {
   }
 }
 
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+}
+
+.navbar .btn-group-sm > .btn,
+.navbar .btn-sm,
+.navbar .btn-group-sm > .btn {
+  font-size: 0.8rem;
+}
+
+.navItems_links {
+  display: block;
+  padding: 1.2rem 1rem;
+  font-weight: 700;
+  color: #343f52;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: -0.01rem;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.navItems_links:hover {
+  color: #429523 !important;
+}
+
+.set_border_color {
+  background-color: #429523 !important;
+  border-radius: 0.4rem !important;
+  -webkit-transition: all 0.2s ease-in-out !important;
+  transition: all 0.2s ease-in-out !important;
+  border-color: #429523 !important;
+}
+
+.set_border_color:hover {
+  -webkit-transform: translateY(-0.15rem);
+          transform: translateY(-0.15rem);
+}
+
+.btn-group-sm > .btn,
+.btn-sm,
+.btn-group-sm > .btn {
+  padding: 0.5rem 1rem !important;
+}
+
+.header_btn {
+  font-weight: 700;
+}
+
+.rounded_post {
+  border-radius: 0.4rem !important;
+  color: #429523 !important;
+  border-color: #429523 !important;
+  -webkit-transition: all 0.2s ease-in-out !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.rounded_post:hover {
+  color: #fff !important;
+  background-color: #429523 !important;
+  -webkit-transform: translateY(-0.15rem);
+          transform: translateY(-0.15rem);
+}
+
+.hamburger {
+  display: inline-block;
+  width: 24px;
+  height: 22px;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.plain {
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  vertical-align: middle;
+  border: 0 none;
+  background: 0 0;
+  padding: 0;
+  margin: 0;
+}
+
+.hamburger > span {
+  color: red;
+}
+
+.hamburger span,
+.hamburger::after,
+.hamburger::before {
+  display: block !important;
+  width: 100% !important;
+  height: 3px !important;
+  margin: 0 0 5px !important;
+  -webkit-transition: all 0.2s ease-in-out !important;
+  transition: all 0.2s ease-in-out !important;
+  background: #343f52 !important;
+}
+
+.hamburger::after,
+.hamburger::before {
+  content: "" !important;
+}
+
 @media (min-width: 1224px) {
   .mainBGColor {
     max-width: 1224px;
@@ -3918,7 +4025,9 @@ fieldset:disabled .btn {
   border-radius: 0.3rem;
 }
 
-.btn-sm, .btn-group-sm > .btn {
+
+.btn-sm,
+.btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
