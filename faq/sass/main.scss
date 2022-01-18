@@ -1,0 +1,44 @@
+body {
+  font-family: "Poppins", sans-serif !important;
+  letter-spacing: 0.02em;
+  background-color: #e5e5e585 !important;
+  // background: #e5e5e5 !important;
+}
+html {
+  font-size: 100% !important;
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 87.5% !important;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg_image {
+  background-image: url("../asset/deborah-cortelazzi-gREquCUXQLI-unsplash.jpg");
+  background-size: cover;
+  overflow-x: hidden;
+  height: 65vh;
+}
+.main-section {
+  padding: 2rem 0;
+}
+.faq-item {
+  margin-bottom: 3rem;
+  & h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    font-weight: bold;
+  }
+  p {
+    color: #666;
+    font-size: 0.98rem;
+    line-height: 1.8;
+  }
+}
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
