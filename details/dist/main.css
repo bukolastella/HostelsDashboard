@@ -14,10 +14,8 @@ html {
 }
 
 .hero_bg {
-  background-image: url("../asset/syed-ahmad-kgjQ1AGDwE0-unsplash.jpg");
   height: 65vh;
   position: relative;
-  z-index: -2;
 }
 
 .hero_bg::before {
@@ -29,6 +27,39 @@ html {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9f9c9c00), to(black));
   background-image: linear-gradient(#9f9c9c00, black);
   z-index: -1;
+}
+
+.slider_image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  padding: 0.4rem 1rem;
+  outline: none;
+  border: none;
+  background-color: #429523;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.slider-btn:hover {
+  background-color: #a8e191;
+}
+
+.slider-btn-left {
+  left: 0;
+}
+
+.slider-btn-right {
+  right: 0;
 }
 
 @media (min-width: 1224px) {
