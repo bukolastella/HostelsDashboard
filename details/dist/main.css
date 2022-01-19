@@ -29,14 +29,29 @@ html {
   z-index: -1;
 }
 
-.slider_image {
+.slider {
+  position: absolute;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.slider > img {
+  z-index: -3;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 34%;
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: -3;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .slider-btn {
@@ -48,6 +63,7 @@ html {
   background-color: #429523;
   color: white;
   font-size: 1.2rem;
+  z-index: 1;
 }
 
 .slider-btn:hover {

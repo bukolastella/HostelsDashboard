@@ -27,22 +27,30 @@
   <body>
     <section class="sectionHeight">
       <div class="hero_bg text-white CUSTOMPADDING d-flex align-items-end">
-        <img
-          src="./asset/syed-ahmad-kgjQ1AGDwE0-unsplash.jpg"
-          alt="hostel images"
-          class="slider_image"
-        />
-        <img
-          class="slider_image"
-          alt="hostel images"
-          src="./asset/kara-eads-L7EwHkq1B2s-unsplash.jpg"
-        />
-        <button class="slider-btn slider-btn-left" onclick="plusDivs(-1)">
+        <div class="slider">
+          <img
+            src="./asset/syed-ahmad-kgjQ1AGDwE0-unsplash.jpg"
+            alt="hostel images"
+            class="slider_image"
+          />
+          <img
+            alt="hostel images"
+            src="./asset/kara-eads-L7EwHkq1B2s-unsplash.jpg"
+            class="slider_image"
+          />
+          <img
+            src="./asset/syed-ahmad-kgjQ1AGDwE0-unsplash.jpg"
+            alt="hostel images"
+            class="slider_image"
+          />
+        </div>
+        <button class="slider-btn slider-btn-left" onclick="prevSlide()">
           &#10094;
         </button>
-        <button class="slider-btn slider-btn-right" onclick="plusDivs(+1)">
+        <button class="slider-btn slider-btn-right" onclick="nextSlide()">
           &#10095;
         </button>
+
         <div class="mb-5 AdjustPosition d-none d-md-block Bigsize">
           <div class="text-uppercase fw-bold hr-light-green">Resturant</div>
           <h2 class="fw-bolder my-4 text-capitalize">Chipotle mexican grill</h2>
