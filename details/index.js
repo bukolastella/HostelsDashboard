@@ -4,11 +4,11 @@ const slide = document.querySelectorAll(".slider_image");
 const goToSlide = function (slides) {
   slide.forEach((s, i) => {
     if (i - slides === maxSlide - 1) {
-      s.style.transform = `translateX( ${-100}%)`;
+      s.style.transform = `translateX( ${-103}%)`;
     } else if (i - slides === -(maxSlide - 1)) {
-      s.style.transform = `translateX( ${100}%)`;
+      s.style.transform = `translateX( ${103}%)`;
     } else {
-      s.style.transform = `translateX( ${100 * (i - slides)}%)`;
+      s.style.transform = `translateX( ${103 * (i - slides)}%)`;
     }
   });
 };
