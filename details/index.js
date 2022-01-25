@@ -30,3 +30,31 @@ const prevSlide = function () {
 let curSlide = 0;
 const maxSlide = slide.length;
 goToSlide(0);
+// sticky implementation
+const stickyDisplay = document.getElementById("stickyDisplay");
+const stickyElement = document.getElementById("stickyElement");
+
+const stickyNav = function (entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) stickyElement.classList.add("sticky");
+  else stickyElement.classList.remove("sticky");
+  // if (!entry.isIntersecting && !stickyElement.classList.contains("yoo")) {
+  //   stickyElement.classList.add("yoo");
+  //   return;
+  // }
+  // if (entry.isIntersecting) {
+  //   stickyElement.classList.remove("sticky");
+  //   stickyElement.classList.add("yoo");
+  // }
+  // if (!entry.isIntersecting && stickyElement.classList.contains("yoo")) {
+  //   stickyElement.classList.add("sticky");
+  //   stickyElement.classList.remove("yoo");
+  // }
+};
+
+const stickyDisplayObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+});
+
+stickyDisplayObserver.observe(stickyDisplay);

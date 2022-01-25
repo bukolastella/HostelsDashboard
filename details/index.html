@@ -204,15 +204,8 @@
               <h4 class="fw-bold mb-3">Details</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                ipsum suspendisse ultrices gravida. Risus commodo viverra
-                maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Quis ipsum
-                suspendisse ultrices gravida. Risus commodo viverra maecenas
-                accumsan lacus vel facilisis.
               </p>
-              <p>
+              <!-- <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
                 ipsum suspendisse ultrices gravida. Risus commodo viverra
@@ -223,12 +216,12 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
                 ipsum suspendisse ultrices gravida.
-              </p>
+              </p> -->
             </section>
             <!-- amenities-->
             <section class="mt-4">
               <h4 class="fw-bold mb-3">Amenities</h4>
-              <ul class="setWidth cfs-15 hr-p-color">
+              <!-- <ul class="setWidth cfs-15 hr-p-color">
                 <div class="row">
                   <div class="col-12 col-sm-6 col-lg-4 my-2">
                     <li>
@@ -327,8 +320,33 @@
                     </li>
                   </div>
                 </div>
-              </ul>
+              </ul> -->
             </section>
+            <div class="d-block d-sm-none" id="stickyDisplay">
+              <div class="card mb-5 p-2 rounded-3 bg-grey3" style="z-index: 1">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Booking Online</h5>
+                  <a
+                    href="#"
+                    class="btn bg-green text-white fw-bold my-3 w-100 py-3 rounded-0 SHADE"
+                    >Book Now</a
+                  >
+                  <p class="card-text hr-p-color cfs-15">By Booking.com</p>
+                </div>
+              </div>
+              <!-- 2 booking -->
+              <div class="card mb-5 p-2 rounded-3 bg-grey3" style="z-index: 1">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Renting Online</h5>
+                  <a
+                    href="#"
+                    class="btn bg-green text-white fw-bold my-3 w-100 py-3 rounded-0 SHADE"
+                    >Rent Now</a
+                  >
+                  <p class="card-text hr-p-color cfs-15">By Booking.com</p>
+                </div>
+              </div>
+            </div>
             <!-- Gallery -->
             <section class="mt-4 pt-3" id="gallery">
               <h4 class="fw-bold mb-4">Gallery</h4>
@@ -887,7 +905,10 @@
         </div>
         <div class="col-12 col-lg-4">
           <div>
-            <div class="card mb-5 p-2 rounded-3 bg-grey3" style="z-index: 1">
+            <div
+              class="card mb-5 p-2 rounded-3 bg-grey3 d-none d-sm-block"
+              style="z-index: 1"
+            >
               <div class="card-body">
                 <h5 class="card-title fw-bold">Booking Online</h5>
                 <a
@@ -968,6 +989,34 @@
         </div>
       </div>
     </main>
+    <!-- sticky -->
+    <div class="d-block d-sm-none" id="stickyElement">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <a
+              href="#"
+              class="btn bg-green text-white fw-bold my-3 w-100 py-3 rounded-0 SHADE"
+              >Book Now</a
+            >
+          </div>
+          <div class="col-6">
+            <a
+              href="#"
+              class="btn bg-green text-white fw-bold my-3 w-100 py-3 rounded-0 SHADE"
+              >Book Now</a
+            >
+          </div>
+          <div class="col-12">
+            <a
+              href="#"
+              class="btn bg-green text-white fw-bold my-3 w-100 py-3 rounded-0 SHADE"
+              >Book Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
